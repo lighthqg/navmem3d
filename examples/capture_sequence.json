@@ -1,0 +1,13 @@
+{
+  "sequence_id": "example_walk_001",
+  "coordinate_frame": "world_z_up_right_handed",
+  "camera_model": "pinhole",
+  "frames": [
+    {"frame_id": "f000", "timestamp_s": 0.0, "rgb_uri": "rgb/000.jpg", "intrinsics": [500,0,320,0,500,240,0,0,1], "T_world_camera": [1,0,0,0,0,1,0,0,0,0,1,1.4,0,0,0,1]},
+    {"frame_id": "f001", "timestamp_s": 1.0, "rgb_uri": "rgb/001.jpg", "intrinsics": [500,0,320,0,500,240,0,0,1], "T_world_camera": [1,0,0,1,0,1,0,0,0,0,1,1.4,0,0,0,1]},
+    {"frame_id": "f002", "timestamp_s": 2.0, "rgb_uri": "rgb/002.jpg", "intrinsics": [500,0,320,0,500,240,0,0,1], "T_world_camera": [0,-1,0,1,1,0,0,1,0,0,1,1.4,0,0,0,1]},
+    {"frame_id": "f003", "timestamp_s": 3.0, "rgb_uri": "rgb/003.jpg", "intrinsics": [500,0,320,0,500,240,0,0,1], "T_world_camera": [-1,0,0,0,0,-1,0,1,0,0,1,1.4,0,0,0,1]},
+    {"frame_id": "f004", "timestamp_s": 4.0, "rgb_uri": "rgb/004.jpg", "intrinsics": [500,0,320,0,500,240,0,0,1], "T_world_camera": [0,1,0,0,-1,0,0,0,0,0,1,1.4,0,0,0,1]}
+  ]
+}
+

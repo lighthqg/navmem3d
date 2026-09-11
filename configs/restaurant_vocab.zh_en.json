@@ -1,0 +1,13 @@
+{
+  "schema_version": "0.1",
+  "categories": [
+    {"id": "dining_table", "canonical": "dining table", "aliases": ["dining table", "table", "餐桌", "桌子"]},
+    {"id": "dining_chair", "canonical": "dining chair", "aliases": ["dining chair", "chair", "餐椅", "椅子"]},
+    {"id": "banquette", "canonical": "banquette", "aliases": ["banquette", "booth seat", "卡座", "长椅"]},
+    {"id": "plate", "canonical": "plate", "aliases": ["plate", "dish", "盘子", "餐盘"]},
+    {"id": "pendant_light", "canonical": "pendant light", "aliases": ["pendant light", "hanging lamp", "吊灯"]},
+    {"id": "room_divider", "canonical": "room divider", "aliases": ["room divider", "partition", "隔断", "屏风"]},
+    {"id": "window", "canonical": "window", "aliases": ["window", "窗户"]},
+    {"id": "wall_art", "canonical": "wall art", "aliases": ["wall art", "painting", "壁画", "装饰画"]}
+  ]
+}

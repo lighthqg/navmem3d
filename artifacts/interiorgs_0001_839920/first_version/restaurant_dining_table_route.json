@@ -1,0 +1,379 @@
+{
+  "schema_version": "0.2",
+  "protocol": "marble_entity_to_undirected_topology_route",
+  "query_term": "dining table",
+  "start_topology_node_id": "topo_000",
+  "target_entity": {
+    "entity_id": "entity_0006",
+    "labels": [
+      "dining table",
+      "table",
+      "餐桌",
+      "桌子"
+    ],
+    "category_id": "dining_table",
+    "source_virtual_view_index": 2,
+    "source_frame_id": "frame_0182",
+    "source_frame_index": 182,
+    "topology_node_id": "topo_001",
+    "topology_reference_frame_id": "frame_0003",
+    "topology_reference_frame_index": 3,
+    "local_visual_inliers": 6,
+    "binding_confidence": 0.9396798610687256,
+    "navigation_eligible": true
+  },
+  "target_topology_node_id": "topo_001",
+  "node_sequence": [
+    "topo_000",
+    "topo_039",
+    "topo_001"
+  ],
+  "edge_sequence": [
+    "corridor_000",
+    "corridor_001"
+  ],
+  "cost_m": 0.5,
+  "candidate_routes": [
+    {
+      "target_entity": {
+        "entity_id": "entity_0006",
+        "labels": [
+          "dining table",
+          "table",
+          "餐桌",
+          "桌子"
+        ],
+        "category_id": "dining_table",
+        "source_virtual_view_index": 2,
+        "source_frame_id": "frame_0182",
+        "source_frame_index": 182,
+        "topology_node_id": "topo_001",
+        "topology_reference_frame_id": "frame_0003",
+        "topology_reference_frame_index": 3,
+        "local_visual_inliers": 6,
+        "binding_confidence": 0.9396798610687256,
+        "navigation_eligible": true
+      },
+      "target_topology_node_id": "topo_001",
+      "node_sequence": [
+        "topo_000",
+        "topo_039",
+        "topo_001"
+      ],
+      "edge_sequence": [
+        "corridor_000",
+        "corridor_001"
+      ],
+      "cost_m": 0.5
+    },
+    {
+      "target_entity": {
+        "entity_id": "entity_0023",
+        "labels": [
+          "dining table",
+          "table",
+          "餐桌",
+          "桌子"
+        ],
+        "category_id": "dining_table",
+        "source_virtual_view_index": 2,
+        "source_frame_id": "frame_0182",
+        "source_frame_index": 182,
+        "topology_node_id": "topo_001",
+        "topology_reference_frame_id": "frame_0003",
+        "topology_reference_frame_index": 3,
+        "local_visual_inliers": 6,
+        "binding_confidence": 0.9396798610687256,
+        "navigation_eligible": true
+      },
+      "target_topology_node_id": "topo_001",
+      "node_sequence": [
+        "topo_000",
+        "topo_039",
+        "topo_001"
+      ],
+      "edge_sequence": [
+        "corridor_000",
+        "corridor_001"
+      ],
+      "cost_m": 0.5
+    },
+    {
+      "target_entity": {
+        "entity_id": "entity_0021",
+        "labels": [
+          "dining table",
+          "table",
+          "餐桌",
+          "桌子"
+        ],
+        "category_id": "dining_table",
+        "source_virtual_view_index": 0,
+        "source_frame_id": "frame_0162",
+        "source_frame_index": 162,
+        "topology_node_id": "topo_021",
+        "topology_reference_frame_id": "frame_0162",
+        "topology_reference_frame_index": 162,
+        "local_visual_inliers": 7,
+        "binding_confidence": 0.925028383731842,
+        "navigation_eligible": true
+      },
+      "target_topology_node_id": "topo_021",
+      "node_sequence": [
+        "topo_000",
+        "topo_039",
+        "topo_023",
+        "topo_022",
+        "topo_021"
+      ],
+      "edge_sequence": [
+        "corridor_000",
+        "corridor_025",
+        "corridor_024",
+        "corridor_023"
+      ],
+      "cost_m": 3.2434729415438674
+    },
+    {
+      "target_entity": {
+        "entity_id": "entity_0063",
+        "labels": [
+          "dining table",
+          "table",
+          "餐桌",
+          "桌子"
+        ],
+        "category_id": "dining_table",
+        "source_virtual_view_index": 1,
+        "source_frame_id": "frame_0070",
+        "source_frame_index": 70,
+        "topology_node_id": "topo_011",
+        "topology_reference_frame_id": "frame_0070",
+        "topology_reference_frame_index": 70,
+        "local_visual_inliers": 6,
+        "binding_confidence": 0.9430641531944275,
+        "navigation_eligible": true
+      },
+      "target_topology_node_id": "topo_011",
+      "node_sequence": [
+        "topo_000",
+        "topo_039",
+        "topo_001",
+        "topo_036",
+        "topo_040",
+        "topo_003",
+        "topo_004",
+        "topo_005",
+        "topo_006",
+        "topo_007",
+        "topo_008",
+        "topo_009",
+        "topo_010",
+        "topo_011"
+      ],
+      "edge_sequence": [
+        "corridor_000",
+        "corridor_001",
+        "corridor_045",
+        "corridor_044",
+        "corridor_004",
+        "corridor_005",
+        "corridor_006",
+        "corridor_007",
+        "corridor_008",
+        "corridor_009",
+        "corridor_010",
+        "corridor_011",
+        "corridor_012"
+      ],
+      "cost_m": 11.196865496583843
+    },
+    {
+      "target_entity": {
+        "entity_id": "entity_0064",
+        "labels": [
+          "dining table",
+          "table",
+          "餐桌",
+          "桌子"
+        ],
+        "category_id": "dining_table",
+        "source_virtual_view_index": 1,
+        "source_frame_id": "frame_0070",
+        "source_frame_index": 70,
+        "topology_node_id": "topo_011",
+        "topology_reference_frame_id": "frame_0070",
+        "topology_reference_frame_index": 70,
+        "local_visual_inliers": 6,
+        "binding_confidence": 0.9430641531944275,
+        "navigation_eligible": true
+      },
+      "target_topology_node_id": "topo_011",
+      "node_sequence": [
+        "topo_000",
+        "topo_039",
+        "topo_001",
+        "topo_036",
+        "topo_040",
+        "topo_003",
+        "topo_004",
+        "topo_005",
+        "topo_006",
+        "topo_007",
+        "topo_008",
+        "topo_009",
+        "topo_010",
+        "topo_011"
+      ],
+      "edge_sequence": [
+        "corridor_000",
+        "corridor_001",
+        "corridor_045",
+        "corridor_044",
+        "corridor_004",
+        "corridor_005",
+        "corridor_006",
+        "corridor_007",
+        "corridor_008",
+        "corridor_009",
+        "corridor_010",
+        "corridor_011",
+        "corridor_012"
+      ],
+      "cost_m": 11.196865496583843
+    },
+    {
+      "target_entity": {
+        "entity_id": "entity_0000",
+        "labels": [
+          "dining table",
+          "table",
+          "餐桌",
+          "桌子"
+        ],
+        "category_id": "dining_table",
+        "source_virtual_view_index": 7,
+        "source_frame_id": "frame_0149",
+        "source_frame_index": 149,
+        "topology_node_id": "topo_019",
+        "topology_reference_frame_id": "frame_0148",
+        "topology_reference_frame_index": 148,
+        "local_visual_inliers": 5,
+        "binding_confidence": 0.9681593775749207,
+        "navigation_eligible": false
+      },
+      "target_topology_node_id": "topo_019",
+      "node_sequence": [
+        "topo_000",
+        "topo_039",
+        "topo_023",
+        "topo_022",
+        "topo_021",
+        "topo_020",
+        "topo_019"
+      ],
+      "edge_sequence": [
+        "corridor_000",
+        "corridor_025",
+        "corridor_024",
+        "corridor_023",
+        "corridor_022",
+        "corridor_021"
+      ],
+      "cost_m": 5.625174956558912
+    },
+    {
+      "target_entity": {
+        "entity_id": "entity_0078",
+        "labels": [
+          "dining table",
+          "table",
+          "餐桌",
+          "桌子"
+        ],
+        "category_id": "dining_table",
+        "source_virtual_view_index": 7,
+        "source_frame_id": "frame_0149",
+        "source_frame_index": 149,
+        "topology_node_id": "topo_019",
+        "topology_reference_frame_id": "frame_0148",
+        "topology_reference_frame_index": 148,
+        "local_visual_inliers": 5,
+        "binding_confidence": 0.9681593775749207,
+        "navigation_eligible": false
+      },
+      "target_topology_node_id": "topo_019",
+      "node_sequence": [
+        "topo_000",
+        "topo_039",
+        "topo_023",
+        "topo_022",
+        "topo_021",
+        "topo_020",
+        "topo_019"
+      ],
+      "edge_sequence": [
+        "corridor_000",
+        "corridor_025",
+        "corridor_024",
+        "corridor_023",
+        "corridor_022",
+        "corridor_021"
+      ],
+      "cost_m": 5.625174956558912
+    },
+    {
+      "target_entity": {
+        "entity_id": "entity_0080",
+        "labels": [
+          "dining table",
+          "table",
+          "餐桌",
+          "桌子"
+        ],
+        "category_id": "dining_table",
+        "source_virtual_view_index": 7,
+        "source_frame_id": "frame_0149",
+        "source_frame_index": 149,
+        "topology_node_id": "topo_019",
+        "topology_reference_frame_id": "frame_0148",
+        "topology_reference_frame_index": 148,
+        "local_visual_inliers": 5,
+        "binding_confidence": 0.9681593775749207,
+        "navigation_eligible": false
+      },
+      "target_topology_node_id": "topo_019",
+      "node_sequence": [
+        "topo_000",
+        "topo_039",
+        "topo_023",
+        "topo_022",
+        "topo_021",
+        "topo_020",
+        "topo_019"
+      ],
+      "edge_sequence": [
+        "corridor_000",
+        "corridor_025",
+        "corridor_024",
+        "corridor_023",
+        "corridor_022",
+        "corridor_021"
+      ],
+      "cost_m": 5.625174956558912
+    }
+  ],
+  "handoff": {
+    "semantic_world": "Marble World B",
+    "planning_world": "observed topology graph",
+    "execution_world": "robot/current RGB + controller"
+  },
+  "arrival_policy": "route arrival is provisional; confirm target with current RGB",
+  "reference_frame_sequence": [
+    "frame_0000",
+    "frame_0001",
+    "frame_0003"
+  ],
+  "planning_topology": "topology_graph_final.json",
+  "spatial_layer": "data/interiorgs/0001_839920/occupancy.png"
+}

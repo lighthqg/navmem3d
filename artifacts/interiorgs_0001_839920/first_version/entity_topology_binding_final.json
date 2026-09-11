@@ -1,0 +1,908 @@
+{
+  "schema_version": "0.1",
+  "protocol": "marble_entity_to_topology_node_rebinding",
+  "source_entities": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/first_version/entity_route_binding_local.json",
+  "source_topology": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/first_version/topology_graph_final.json",
+  "selection": "highest local SIFT/RANSAC evidence, then nearest topology reference frame",
+  "entities": [
+    {
+      "entity_id": "entity_0000",
+      "labels": [
+        "dining table",
+        "table",
+        "餐桌",
+        "桌子"
+      ],
+      "category_id": "dining_table",
+      "source_virtual_view_index": 7,
+      "source_frame_id": "frame_0149",
+      "source_frame_index": 149,
+      "topology_node_id": "topo_019",
+      "topology_reference_frame_id": "frame_0148",
+      "topology_reference_frame_index": 148,
+      "local_visual_inliers": 5,
+      "binding_confidence": 0.9681593775749207,
+      "navigation_eligible": false
+    },
+    {
+      "entity_id": "entity_0002",
+      "labels": [
+        "room divider",
+        "partition",
+        "隔断",
+        "屏风"
+      ],
+      "category_id": "room_divider",
+      "source_virtual_view_index": 2,
+      "source_frame_id": "frame_0182",
+      "source_frame_index": 182,
+      "topology_node_id": "topo_001",
+      "topology_reference_frame_id": "frame_0003",
+      "topology_reference_frame_index": 3,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9396798610687256,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0004",
+      "labels": [
+        "banquette",
+        "booth seat",
+        "卡座",
+        "长椅"
+      ],
+      "category_id": "banquette",
+      "source_virtual_view_index": 2,
+      "source_frame_id": "frame_0182",
+      "source_frame_index": 182,
+      "topology_node_id": "topo_001",
+      "topology_reference_frame_id": "frame_0003",
+      "topology_reference_frame_index": 3,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9396798610687256,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0005",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 6,
+      "source_frame_id": "frame_0000",
+      "source_frame_index": 0,
+      "topology_node_id": "topo_000",
+      "topology_reference_frame_id": "frame_0000",
+      "topology_reference_frame_index": 0,
+      "local_visual_inliers": 9,
+      "binding_confidence": 0.9538382291793823,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0006",
+      "labels": [
+        "dining table",
+        "table",
+        "餐桌",
+        "桌子"
+      ],
+      "category_id": "dining_table",
+      "source_virtual_view_index": 2,
+      "source_frame_id": "frame_0182",
+      "source_frame_index": 182,
+      "topology_node_id": "topo_001",
+      "topology_reference_frame_id": "frame_0003",
+      "topology_reference_frame_index": 3,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9396798610687256,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0007",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 1,
+      "source_frame_id": "frame_0070",
+      "source_frame_index": 70,
+      "topology_node_id": "topo_011",
+      "topology_reference_frame_id": "frame_0070",
+      "topology_reference_frame_index": 70,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9430641531944275,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0008",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 1,
+      "source_frame_id": "frame_0070",
+      "source_frame_index": 70,
+      "topology_node_id": "topo_011",
+      "topology_reference_frame_id": "frame_0070",
+      "topology_reference_frame_index": 70,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9430641531944275,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0010",
+      "labels": [
+        "pendant light",
+        "hanging lamp",
+        "吊灯"
+      ],
+      "category_id": "pendant_light",
+      "source_virtual_view_index": 2,
+      "source_frame_id": "frame_0182",
+      "source_frame_index": 182,
+      "topology_node_id": "topo_001",
+      "topology_reference_frame_id": "frame_0003",
+      "topology_reference_frame_index": 3,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9396798610687256,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0012",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 1,
+      "source_frame_id": "frame_0070",
+      "source_frame_index": 70,
+      "topology_node_id": "topo_011",
+      "topology_reference_frame_id": "frame_0070",
+      "topology_reference_frame_index": 70,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9430641531944275,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0014",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 2,
+      "source_frame_id": "frame_0182",
+      "source_frame_index": 182,
+      "topology_node_id": "topo_001",
+      "topology_reference_frame_id": "frame_0003",
+      "topology_reference_frame_index": 3,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9396798610687256,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0015",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 3,
+      "source_frame_id": "frame_0025",
+      "source_frame_index": 25,
+      "topology_node_id": "topo_004",
+      "topology_reference_frame_id": "frame_0022",
+      "topology_reference_frame_index": 22,
+      "local_visual_inliers": 5,
+      "binding_confidence": 0.9343871474266052,
+      "navigation_eligible": false
+    },
+    {
+      "entity_id": "entity_0016",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 0,
+      "source_frame_id": "frame_0162",
+      "source_frame_index": 162,
+      "topology_node_id": "topo_021",
+      "topology_reference_frame_id": "frame_0162",
+      "topology_reference_frame_index": 162,
+      "local_visual_inliers": 7,
+      "binding_confidence": 0.925028383731842,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0017",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 6,
+      "source_frame_id": "frame_0000",
+      "source_frame_index": 0,
+      "topology_node_id": "topo_000",
+      "topology_reference_frame_id": "frame_0000",
+      "topology_reference_frame_index": 0,
+      "local_visual_inliers": 9,
+      "binding_confidence": 0.9538382291793823,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0018",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 2,
+      "source_frame_id": "frame_0182",
+      "source_frame_index": 182,
+      "topology_node_id": "topo_001",
+      "topology_reference_frame_id": "frame_0003",
+      "topology_reference_frame_index": 3,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9396798610687256,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0019",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 1,
+      "source_frame_id": "frame_0070",
+      "source_frame_index": 70,
+      "topology_node_id": "topo_011",
+      "topology_reference_frame_id": "frame_0070",
+      "topology_reference_frame_index": 70,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9430641531944275,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0020",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 1,
+      "source_frame_id": "frame_0070",
+      "source_frame_index": 70,
+      "topology_node_id": "topo_011",
+      "topology_reference_frame_id": "frame_0070",
+      "topology_reference_frame_index": 70,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9430641531944275,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0021",
+      "labels": [
+        "dining table",
+        "table",
+        "餐桌",
+        "桌子"
+      ],
+      "category_id": "dining_table",
+      "source_virtual_view_index": 0,
+      "source_frame_id": "frame_0162",
+      "source_frame_index": 162,
+      "topology_node_id": "topo_021",
+      "topology_reference_frame_id": "frame_0162",
+      "topology_reference_frame_index": 162,
+      "local_visual_inliers": 7,
+      "binding_confidence": 0.925028383731842,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0022",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 1,
+      "source_frame_id": "frame_0070",
+      "source_frame_index": 70,
+      "topology_node_id": "topo_011",
+      "topology_reference_frame_id": "frame_0070",
+      "topology_reference_frame_index": 70,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9430641531944275,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0023",
+      "labels": [
+        "dining table",
+        "table",
+        "餐桌",
+        "桌子"
+      ],
+      "category_id": "dining_table",
+      "source_virtual_view_index": 2,
+      "source_frame_id": "frame_0182",
+      "source_frame_index": 182,
+      "topology_node_id": "topo_001",
+      "topology_reference_frame_id": "frame_0003",
+      "topology_reference_frame_index": 3,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9396798610687256,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0024",
+      "labels": [
+        "pendant light",
+        "hanging lamp",
+        "吊灯"
+      ],
+      "category_id": "pendant_light",
+      "source_virtual_view_index": 2,
+      "source_frame_id": "frame_0182",
+      "source_frame_index": 182,
+      "topology_node_id": "topo_001",
+      "topology_reference_frame_id": "frame_0003",
+      "topology_reference_frame_index": 3,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9396798610687256,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0025",
+      "labels": [
+        "pendant light",
+        "hanging lamp",
+        "吊灯"
+      ],
+      "category_id": "pendant_light",
+      "source_virtual_view_index": 4,
+      "source_frame_id": "frame_0207",
+      "source_frame_index": 207,
+      "topology_node_id": "topo_026",
+      "topology_reference_frame_id": "frame_0207",
+      "topology_reference_frame_index": 207,
+      "local_visual_inliers": 5,
+      "binding_confidence": 0.9356472492218018,
+      "navigation_eligible": false
+    },
+    {
+      "entity_id": "entity_0026",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 4,
+      "source_frame_id": "frame_0207",
+      "source_frame_index": 207,
+      "topology_node_id": "topo_026",
+      "topology_reference_frame_id": "frame_0207",
+      "topology_reference_frame_index": 207,
+      "local_visual_inliers": 5,
+      "binding_confidence": 0.9356472492218018,
+      "navigation_eligible": false
+    },
+    {
+      "entity_id": "entity_0028",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 4,
+      "source_frame_id": "frame_0207",
+      "source_frame_index": 207,
+      "topology_node_id": "topo_026",
+      "topology_reference_frame_id": "frame_0207",
+      "topology_reference_frame_index": 207,
+      "local_visual_inliers": 5,
+      "binding_confidence": 0.9356472492218018,
+      "navigation_eligible": false
+    },
+    {
+      "entity_id": "entity_0029",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 4,
+      "source_frame_id": "frame_0207",
+      "source_frame_index": 207,
+      "topology_node_id": "topo_026",
+      "topology_reference_frame_id": "frame_0207",
+      "topology_reference_frame_index": 207,
+      "local_visual_inliers": 5,
+      "binding_confidence": 0.9356472492218018,
+      "navigation_eligible": false
+    },
+    {
+      "entity_id": "entity_0030",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 5,
+      "source_frame_id": "frame_0000",
+      "source_frame_index": 0,
+      "topology_node_id": "topo_000",
+      "topology_reference_frame_id": "frame_0000",
+      "topology_reference_frame_index": 0,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9453574419021606,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0031",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 6,
+      "source_frame_id": "frame_0000",
+      "source_frame_index": 0,
+      "topology_node_id": "topo_000",
+      "topology_reference_frame_id": "frame_0000",
+      "topology_reference_frame_index": 0,
+      "local_visual_inliers": 9,
+      "binding_confidence": 0.9538382291793823,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0032",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 6,
+      "source_frame_id": "frame_0000",
+      "source_frame_index": 0,
+      "topology_node_id": "topo_000",
+      "topology_reference_frame_id": "frame_0000",
+      "topology_reference_frame_index": 0,
+      "local_visual_inliers": 9,
+      "binding_confidence": 0.9538382291793823,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0034",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 0,
+      "source_frame_id": "frame_0162",
+      "source_frame_index": 162,
+      "topology_node_id": "topo_021",
+      "topology_reference_frame_id": "frame_0162",
+      "topology_reference_frame_index": 162,
+      "local_visual_inliers": 7,
+      "binding_confidence": 0.925028383731842,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0035",
+      "labels": [
+        "window",
+        "窗户"
+      ],
+      "category_id": "window",
+      "source_virtual_view_index": 7,
+      "source_frame_id": "frame_0149",
+      "source_frame_index": 149,
+      "topology_node_id": "topo_019",
+      "topology_reference_frame_id": "frame_0148",
+      "topology_reference_frame_index": 148,
+      "local_visual_inliers": 5,
+      "binding_confidence": 0.9681593775749207,
+      "navigation_eligible": false
+    },
+    {
+      "entity_id": "entity_0036",
+      "labels": [
+        "pendant light",
+        "hanging lamp",
+        "吊灯"
+      ],
+      "category_id": "pendant_light",
+      "source_virtual_view_index": 4,
+      "source_frame_id": "frame_0207",
+      "source_frame_index": 207,
+      "topology_node_id": "topo_026",
+      "topology_reference_frame_id": "frame_0207",
+      "topology_reference_frame_index": 207,
+      "local_visual_inliers": 5,
+      "binding_confidence": 0.9356472492218018,
+      "navigation_eligible": false
+    },
+    {
+      "entity_id": "entity_0037",
+      "labels": [
+        "window",
+        "窗户"
+      ],
+      "category_id": "window",
+      "source_virtual_view_index": 5,
+      "source_frame_id": "frame_0000",
+      "source_frame_index": 0,
+      "topology_node_id": "topo_000",
+      "topology_reference_frame_id": "frame_0000",
+      "topology_reference_frame_index": 0,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9453574419021606,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0038",
+      "labels": [
+        "wall art",
+        "painting",
+        "壁画",
+        "装饰画"
+      ],
+      "category_id": "wall_art",
+      "source_virtual_view_index": 5,
+      "source_frame_id": "frame_0000",
+      "source_frame_index": 0,
+      "topology_node_id": "topo_000",
+      "topology_reference_frame_id": "frame_0000",
+      "topology_reference_frame_index": 0,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9453574419021606,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0039",
+      "labels": [
+        "pendant light",
+        "hanging lamp",
+        "吊灯"
+      ],
+      "category_id": "pendant_light",
+      "source_virtual_view_index": 5,
+      "source_frame_id": "frame_0000",
+      "source_frame_index": 0,
+      "topology_node_id": "topo_000",
+      "topology_reference_frame_id": "frame_0000",
+      "topology_reference_frame_index": 0,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9453574419021606,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0040",
+      "labels": [
+        "banquette",
+        "booth seat",
+        "卡座",
+        "长椅"
+      ],
+      "category_id": "banquette",
+      "source_virtual_view_index": 6,
+      "source_frame_id": "frame_0000",
+      "source_frame_index": 0,
+      "topology_node_id": "topo_000",
+      "topology_reference_frame_id": "frame_0000",
+      "topology_reference_frame_index": 0,
+      "local_visual_inliers": 9,
+      "binding_confidence": 0.9538382291793823,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0041",
+      "labels": [
+        "dining table",
+        "table",
+        "餐桌",
+        "桌子"
+      ],
+      "category_id": "dining_table",
+      "source_virtual_view_index": 6,
+      "source_frame_id": "frame_0000",
+      "source_frame_index": 0,
+      "topology_node_id": "topo_000",
+      "topology_reference_frame_id": "frame_0000",
+      "topology_reference_frame_index": 0,
+      "local_visual_inliers": 9,
+      "binding_confidence": 0.9538382291793823,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0044",
+      "labels": [
+        "dining table",
+        "table",
+        "餐桌",
+        "桌子"
+      ],
+      "category_id": "dining_table",
+      "source_virtual_view_index": 6,
+      "source_frame_id": "frame_0000",
+      "source_frame_index": 0,
+      "topology_node_id": "topo_000",
+      "topology_reference_frame_id": "frame_0000",
+      "topology_reference_frame_index": 0,
+      "local_visual_inliers": 9,
+      "binding_confidence": 0.9538382291793823,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0045",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 7,
+      "source_frame_id": "frame_0149",
+      "source_frame_index": 149,
+      "topology_node_id": "topo_019",
+      "topology_reference_frame_id": "frame_0148",
+      "topology_reference_frame_index": 148,
+      "local_visual_inliers": 5,
+      "binding_confidence": 0.9681593775749207,
+      "navigation_eligible": false
+    },
+    {
+      "entity_id": "entity_0046",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 6,
+      "source_frame_id": "frame_0000",
+      "source_frame_index": 0,
+      "topology_node_id": "topo_000",
+      "topology_reference_frame_id": "frame_0000",
+      "topology_reference_frame_index": 0,
+      "local_visual_inliers": 9,
+      "binding_confidence": 0.9538382291793823,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0047",
+      "labels": [
+        "window",
+        "窗户"
+      ],
+      "category_id": "window",
+      "source_virtual_view_index": 7,
+      "source_frame_id": "frame_0149",
+      "source_frame_index": 149,
+      "topology_node_id": "topo_019",
+      "topology_reference_frame_id": "frame_0148",
+      "topology_reference_frame_index": 148,
+      "local_visual_inliers": 5,
+      "binding_confidence": 0.9681593775749207,
+      "navigation_eligible": false
+    },
+    {
+      "entity_id": "entity_0063",
+      "labels": [
+        "dining table",
+        "table",
+        "餐桌",
+        "桌子"
+      ],
+      "category_id": "dining_table",
+      "source_virtual_view_index": 1,
+      "source_frame_id": "frame_0070",
+      "source_frame_index": 70,
+      "topology_node_id": "topo_011",
+      "topology_reference_frame_id": "frame_0070",
+      "topology_reference_frame_index": 70,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9430641531944275,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0064",
+      "labels": [
+        "dining table",
+        "table",
+        "餐桌",
+        "桌子"
+      ],
+      "category_id": "dining_table",
+      "source_virtual_view_index": 1,
+      "source_frame_id": "frame_0070",
+      "source_frame_index": 70,
+      "topology_node_id": "topo_011",
+      "topology_reference_frame_id": "frame_0070",
+      "topology_reference_frame_index": 70,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9430641531944275,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0065",
+      "labels": [
+        "window",
+        "窗户"
+      ],
+      "category_id": "window",
+      "source_virtual_view_index": 2,
+      "source_frame_id": "frame_0182",
+      "source_frame_index": 182,
+      "topology_node_id": "topo_001",
+      "topology_reference_frame_id": "frame_0003",
+      "topology_reference_frame_index": 3,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9396798610687256,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0070",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 5,
+      "source_frame_id": "frame_0000",
+      "source_frame_index": 0,
+      "topology_node_id": "topo_000",
+      "topology_reference_frame_id": "frame_0000",
+      "topology_reference_frame_index": 0,
+      "local_visual_inliers": 6,
+      "binding_confidence": 0.9453574419021606,
+      "navigation_eligible": true
+    },
+    {
+      "entity_id": "entity_0076",
+      "labels": [
+        "dining chair",
+        "chair",
+        "餐椅",
+        "椅子"
+      ],
+      "category_id": "dining_chair",
+      "source_virtual_view_index": 7,
+      "source_frame_id": "frame_0149",
+      "source_frame_index": 149,
+      "topology_node_id": "topo_019",
+      "topology_reference_frame_id": "frame_0148",
+      "topology_reference_frame_index": 148,
+      "local_visual_inliers": 5,
+      "binding_confidence": 0.9681593775749207,
+      "navigation_eligible": false
+    },
+    {
+      "entity_id": "entity_0077",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 7,
+      "source_frame_id": "frame_0149",
+      "source_frame_index": 149,
+      "topology_node_id": "topo_019",
+      "topology_reference_frame_id": "frame_0148",
+      "topology_reference_frame_index": 148,
+      "local_visual_inliers": 5,
+      "binding_confidence": 0.9681593775749207,
+      "navigation_eligible": false
+    },
+    {
+      "entity_id": "entity_0078",
+      "labels": [
+        "dining table",
+        "table",
+        "餐桌",
+        "桌子"
+      ],
+      "category_id": "dining_table",
+      "source_virtual_view_index": 7,
+      "source_frame_id": "frame_0149",
+      "source_frame_index": 149,
+      "topology_node_id": "topo_019",
+      "topology_reference_frame_id": "frame_0148",
+      "topology_reference_frame_index": 148,
+      "local_visual_inliers": 5,
+      "binding_confidence": 0.9681593775749207,
+      "navigation_eligible": false
+    },
+    {
+      "entity_id": "entity_0079",
+      "labels": [
+        "plate",
+        "dish",
+        "盘子",
+        "餐盘"
+      ],
+      "category_id": "plate",
+      "source_virtual_view_index": 7,
+      "source_frame_id": "frame_0149",
+      "source_frame_index": 149,
+      "topology_node_id": "topo_019",
+      "topology_reference_frame_id": "frame_0148",
+      "topology_reference_frame_index": 148,
+      "local_visual_inliers": 5,
+      "binding_confidence": 0.9681593775749207,
+      "navigation_eligible": false
+    },
+    {
+      "entity_id": "entity_0080",
+      "labels": [
+        "dining table",
+        "table",
+        "餐桌",
+        "桌子"
+      ],
+      "category_id": "dining_table",
+      "source_virtual_view_index": 7,
+      "source_frame_id": "frame_0149",
+      "source_frame_index": 149,
+      "topology_node_id": "topo_019",
+      "topology_reference_frame_id": "frame_0148",
+      "topology_reference_frame_index": 148,
+      "local_visual_inliers": 5,
+      "binding_confidence": 0.9681593775749207,
+      "navigation_eligible": false
+    }
+  ]
+}

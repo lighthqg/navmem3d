@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1",
+  "prompt_templates": [
+    "a photo of a {}",
+    "a cropped photo of a {}",
+    "an indoor {}"
+  ],
+  "categories": [
+    {"id": "sofa", "aliases": ["sofa", "couch", "沙发"]},
+    {"id": "chair", "aliases": ["chair", "armchair", "椅子", "扶手椅"]},
+    {"id": "table", "aliases": ["table", "coffee table", "side table", "桌子", "茶几"]},
+    {"id": "rug", "aliases": ["rug", "carpet", "地毯"]},
+    {"id": "cushion", "aliases": ["cushion", "pillow", "靠垫", "枕头"]},
+    {"id": "plant", "aliases": ["indoor plant", "potted plant", "植物", "盆栽"]},
+    {"id": "painting", "aliases": ["painting", "picture", "wall art", "画", "壁画"]},
+    {"id": "lamp", "aliases": ["lamp", "floor lamp", "台灯", "落地灯"]},
+    {"id": "vase", "aliases": ["vase", "花瓶"]},
+    {"id": "cabinet", "aliases": ["cabinet", "shelf", "柜子", "架子"]},
+    {"id": "door", "aliases": ["door", "门"]},
+    {"id": "window", "aliases": ["window", "窗户"]},
+    {"id": "wall", "aliases": ["wall", "墙"]},
+    {"id": "floor", "aliases": ["floor", "地板"]},
+    {"id": "ceiling", "aliases": ["ceiling", "天花板"]},
+    {"id": "unknown_object", "aliases": ["object", "unknown object", "物体"]}
+  ]
+}

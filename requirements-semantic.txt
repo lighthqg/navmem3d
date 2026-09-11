@@ -1,0 +1,5 @@
+# Install the matching CUDA PyTorch wheel before this file.
+numpy==2.5.2
+pillow==12.3.0
+open_clip_torch==3.3.0
+transformers==5.16.1

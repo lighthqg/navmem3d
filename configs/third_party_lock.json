@@ -1,0 +1,38 @@
+{
+  "schema_version": "0.1",
+  "repositories": {
+    "gsplat": {
+      "url": "https://github.com/nerfstudio-project/gsplat.git",
+      "commit": "28e794ca44a4c25ffc39175370c5ee7b38bfcc36",
+      "reported_version": "1.6.0"
+    },
+    "sam2": {
+      "url": "https://github.com/facebookresearch/sam2.git",
+      "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4"
+    },
+    "opensplat3d": {
+      "url": "https://github.com/VisualComputingInstitute/opensplat3d.git",
+      "commit": "ba6df71d87a16a06539ee5868e5825ce195ce124",
+      "usage": "optional_training_enhancement_and_baseline"
+    },
+    "navgsim": {
+      "url": "https://github.com/2003jiahang/NavGSim.git",
+      "commit": "d7b4607397afe3612e624f1ddf65807a26e7c0ed",
+      "usage": "trajectory_astar_evaluation_reference; hierarchical_renderer_optional"
+    }
+  },
+  "python_environment": {
+    "python": "3.12",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.5.2",
+    "pillow": "12.3.0",
+    "open_clip_torch": "3.3.0",
+    "transformers": "5.16.1"
+  },
+  "gpu_build": {
+    "cuda_toolkit": "12.8",
+    "torch_cuda_arch_list": "12.0",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti"
+  }
+}

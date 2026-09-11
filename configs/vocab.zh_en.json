@@ -1,0 +1,12 @@
+{
+  "schema_version": "0.1",
+  "categories": [
+    {"canonical": "printer", "aliases": ["打印机", "复印机"]},
+    {"canonical": "sink", "aliases": ["水槽", "洗手池"]},
+    {"canonical": "refrigerator", "aliases": ["冰箱", "冷藏柜"]},
+    {"canonical": "stove", "aliases": ["灶台", "炉灶"]},
+    {"canonical": "oven", "aliases": ["烤箱"]},
+    {"canonical": "door", "aliases": ["门"]}
+  ]
+}
+

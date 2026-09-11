@@ -1,0 +1,14 @@
+{
+  "schema_version": "0.1",
+  "type": "layered_space_topology_visualization",
+  "spatial_layer": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/data/interiorgs/0001_839920/occupancy.png",
+  "topology_layer": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/first_version/topology_graph_final.json",
+  "route": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/first_version/restaurant_dining_table_route.json",
+  "obstacle_outline": "derived from occupied/free/unknown boundaries",
+  "graph_edges_source": "topology JSON only",
+  "nodes": 41,
+  "edges": 48,
+  "route_nodes": [
+    "topo_000"
+  ]
+}

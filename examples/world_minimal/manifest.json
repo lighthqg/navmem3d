@@ -1,0 +1,13 @@
+{
+  "schema_version": "0.1",
+  "world_id": "example_room_001",
+  "builder": "local_3dgs",
+  "asset_uri": "scene.ply",
+  "asset_format": "ply",
+  "coordinate_frame": "world_z_up_right_handed",
+  "metric_scale": 1.0,
+  "source_sequence_id": "example_walk_001",
+  "metadata": {
+    "note": "E0 contract fixture; scene.ply is a minimal placeholder rather than a renderable 3DGS asset."
+  }
+}

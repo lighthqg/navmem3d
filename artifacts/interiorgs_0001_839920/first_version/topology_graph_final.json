@@ -1,0 +1,2484 @@
+{
+  "schema_version": "0.4",
+  "type": "undirected_topology_graph",
+  "source_observed_patrol": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/patrol.json",
+  "runtime_contract": "topology compiled from traversed path; no unobserved occupancy region is included",
+  "nodes": [
+    {
+      "node_id": "topo_000",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        139,
+        94
+      ],
+      "position_xy": [
+        3.0336797714233397,
+        -2.724459934234619
+      ],
+      "reference_frame_id": "frame_0000",
+      "reference_frame_index": 0,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0000.png"
+    },
+    {
+      "node_id": "topo_001",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        131,
+        100
+      ],
+      "position_xy": [
+        3.433679771423339,
+        -2.424459934234619
+      ],
+      "reference_frame_id": "frame_0003",
+      "reference_frame_index": 3,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0003.png"
+    },
+    {
+      "node_id": "topo_002",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        107,
+        100
+      ],
+      "position_xy": [
+        4.633679771423339,
+        -2.424459934234619
+      ],
+      "reference_frame_id": "frame_0011",
+      "reference_frame_index": 11,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0011.png"
+    },
+    {
+      "node_id": "topo_003",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        90,
+        110
+      ],
+      "position_xy": [
+        5.48367977142334,
+        -1.9244599342346191
+      ],
+      "reference_frame_id": "frame_0016",
+      "reference_frame_index": 16,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0016.png"
+    },
+    {
+      "node_id": "topo_004",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        74,
+        120
+      ],
+      "position_xy": [
+        6.28367977142334,
+        -1.4244599342346191
+      ],
+      "reference_frame_id": "frame_0022",
+      "reference_frame_index": 22,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0022.png"
+    },
+    {
+      "node_id": "topo_005",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        84,
+        138
+      ],
+      "position_xy": [
+        5.78367977142334,
+        -0.5244599342346188
+      ],
+      "reference_frame_id": "frame_0028",
+      "reference_frame_index": 28,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0028.png"
+    },
+    {
+      "node_id": "topo_006",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        84,
+        164
+      ],
+      "position_xy": [
+        5.78367977142334,
+        0.7755400657653819
+      ],
+      "reference_frame_id": "frame_0037",
+      "reference_frame_index": 37,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0037.png"
+    },
+    {
+      "node_id": "topo_007",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        83,
+        190
+      ],
+      "position_xy": [
+        5.8336797714233395,
+        2.075540065765381
+      ],
+      "reference_frame_id": "frame_0046",
+      "reference_frame_index": 46,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0046.png"
+    },
+    {
+      "node_id": "topo_008",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        92,
+        181
+      ],
+      "position_xy": [
+        5.383679771423339,
+        1.6255400657653816
+      ],
+      "reference_frame_id": "frame_0049",
+      "reference_frame_index": 49,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0049.png"
+    },
+    {
+      "node_id": "topo_009",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        93,
+        162
+      ],
+      "position_xy": [
+        5.3336797714233395,
+        0.6755400657653805
+      ],
+      "reference_frame_id": "frame_0055",
+      "reference_frame_index": 55,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0055.png"
+    },
+    {
+      "node_id": "topo_010",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        104,
+        151
+      ],
+      "position_xy": [
+        4.78367977142334,
+        0.12554006576538157
+      ],
+      "reference_frame_id": "frame_0059",
+      "reference_frame_index": 59,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0059.png"
+    },
+    {
+      "node_id": "topo_011",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        136,
+        151
+      ],
+      "position_xy": [
+        3.183679771423339,
+        0.12554006576538157
+      ],
+      "reference_frame_id": "frame_0070",
+      "reference_frame_index": 70,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0070.png"
+    },
+    {
+      "node_id": "topo_012",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        168,
+        151
+      ],
+      "position_xy": [
+        1.5836797714233395,
+        0.12554006576538157
+      ],
+      "reference_frame_id": "frame_0080",
+      "reference_frame_index": 80,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0080.png"
+    },
+    {
+      "node_id": "topo_013",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        200,
+        151
+      ],
+      "position_xy": [
+        -0.016320228576660156,
+        0.12554006576538157
+      ],
+      "reference_frame_id": "frame_0091",
+      "reference_frame_index": 91,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0091.png"
+    },
+    {
+      "node_id": "topo_014",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        232,
+        151
+      ],
+      "position_xy": [
+        -1.6163202285766616,
+        0.12554006576538157
+      ],
+      "reference_frame_id": "frame_0102",
+      "reference_frame_index": 102,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0102.png"
+    },
+    {
+      "node_id": "topo_015",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        232,
+        124
+      ],
+      "position_xy": [
+        -1.6163202285766616,
+        -1.224459934234619
+      ],
+      "reference_frame_id": "frame_0111",
+      "reference_frame_index": 111,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0111.png"
+    },
+    {
+      "node_id": "topo_016",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        232,
+        97
+      ],
+      "position_xy": [
+        -1.6163202285766616,
+        -2.5744599342346186
+      ],
+      "reference_frame_id": "frame_0120",
+      "reference_frame_index": 120,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0120.png"
+    },
+    {
+      "node_id": "topo_017",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        232,
+        70
+      ],
+      "position_xy": [
+        -1.6163202285766616,
+        -3.924459934234619
+      ],
+      "reference_frame_id": "frame_0129",
+      "reference_frame_index": 129,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0129.png"
+    },
+    {
+      "node_id": "topo_018",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        232,
+        43
+      ],
+      "position_xy": [
+        -1.6163202285766616,
+        -5.274459934234619
+      ],
+      "reference_frame_id": "frame_0138",
+      "reference_frame_index": 138,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0138.png"
+    },
+    {
+      "node_id": "topo_019",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        231,
+        73
+      ],
+      "position_xy": [
+        -1.5663202285766609,
+        -3.774459934234619
+      ],
+      "reference_frame_id": "frame_0148",
+      "reference_frame_index": 148,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0148.png"
+    },
+    {
+      "node_id": "topo_020",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        218,
+        89
+      ],
+      "position_xy": [
+        -0.9163202285766605,
+        -2.974459934234619
+      ],
+      "reference_frame_id": "frame_0153",
+      "reference_frame_index": 153,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0153.png"
+    },
+    {
+      "node_id": "topo_021",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        191,
+        90
+      ],
+      "position_xy": [
+        0.43367977142333913,
+        -2.924459934234619
+      ],
+      "reference_frame_id": "frame_0162",
+      "reference_frame_index": 162,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0162.png"
+    },
+    {
+      "node_id": "topo_022",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        164,
+        90
+      ],
+      "position_xy": [
+        1.7836797714233388,
+        -2.924459934234619
+      ],
+      "reference_frame_id": "frame_0171",
+      "reference_frame_index": 171,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0171.png"
+    },
+    {
+      "node_id": "topo_023",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        146,
+        101
+      ],
+      "position_xy": [
+        2.683679771423339,
+        -2.3744599342346184
+      ],
+      "reference_frame_id": "frame_0177",
+      "reference_frame_index": 177,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0177.png"
+    },
+    {
+      "node_id": "topo_024",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        121,
+        92
+      ],
+      "position_xy": [
+        3.933679771423339,
+        -2.8244599342346186
+      ],
+      "reference_frame_id": "frame_0186",
+      "reference_frame_index": 186,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0186.png"
+    },
+    {
+      "node_id": "topo_025",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        120,
+        59
+      ],
+      "position_xy": [
+        3.98367977142334,
+        -4.474459934234619
+      ],
+      "reference_frame_id": "frame_0197",
+      "reference_frame_index": 197,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0197.png"
+    },
+    {
+      "node_id": "topo_026",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        106,
+        29
+      ],
+      "position_xy": [
+        4.683679771423339,
+        -5.974459934234619
+      ],
+      "reference_frame_id": "frame_0207",
+      "reference_frame_index": 207,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0207.png"
+    },
+    {
+      "node_id": "topo_027",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        108,
+        61
+      ],
+      "position_xy": [
+        4.5836797714233395,
+        -4.374459934234618
+      ],
+      "reference_frame_id": "frame_0218",
+      "reference_frame_index": 218,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0218.png"
+    },
+    {
+      "node_id": "topo_028",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        110,
+        93
+      ],
+      "position_xy": [
+        4.48367977142334,
+        -2.774459934234619
+      ],
+      "reference_frame_id": "frame_0229",
+      "reference_frame_index": 229,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0229.png"
+    },
+    {
+      "node_id": "topo_029",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        101,
+        103
+      ],
+      "position_xy": [
+        4.933679771423339,
+        -2.274459934234619
+      ],
+      "reference_frame_id": "frame_0233",
+      "reference_frame_index": 233,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0233.png"
+    },
+    {
+      "node_id": "topo_030",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        77,
+        103
+      ],
+      "position_xy": [
+        6.13367977142334,
+        -2.274459934234619
+      ],
+      "reference_frame_id": "frame_0241",
+      "reference_frame_index": 241,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0241.png"
+    },
+    {
+      "node_id": "topo_031",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        53,
+        82
+      ],
+      "position_xy": [
+        7.3336797714233395,
+        -3.3244599342346186
+      ],
+      "reference_frame_id": "frame_0249",
+      "reference_frame_index": 249,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0249.png"
+    },
+    {
+      "node_id": "topo_032",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        22,
+        73
+      ],
+      "position_xy": [
+        8.88367977142334,
+        -3.774459934234619
+      ],
+      "reference_frame_id": "frame_0259",
+      "reference_frame_index": 259,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0259.png"
+    },
+    {
+      "node_id": "topo_033",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        50,
+        78
+      ],
+      "position_xy": [
+        7.48367977142334,
+        -3.524459934234619
+      ],
+      "reference_frame_id": "frame_0269",
+      "reference_frame_index": 269,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0269.png"
+    },
+    {
+      "node_id": "topo_034",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        66,
+        92
+      ],
+      "position_xy": [
+        6.683679771423339,
+        -2.8244599342346186
+      ],
+      "reference_frame_id": "frame_0245",
+      "reference_frame_index": 245,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0245.png"
+    },
+    {
+      "node_id": "topo_035",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        83,
+        105
+      ],
+      "position_xy": [
+        5.8336797714233395,
+        -2.174459934234619
+      ],
+      "reference_frame_id": "frame_0239",
+      "reference_frame_index": 239,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0239.png"
+    },
+    {
+      "node_id": "topo_036",
+      "type": "route_turn_or_sample",
+      "pixel": [
+        107,
+        102
+      ],
+      "position_xy": [
+        4.633679771423339,
+        -2.3244599342346186
+      ],
+      "reference_frame_id": "frame_0011",
+      "reference_frame_index": 11,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0011.png"
+    },
+    {
+      "node_id": "topo_039",
+      "type": "patrol_intersection",
+      "pixel": [
+        135,
+        97
+      ],
+      "position_xy": [
+        3.23367977142334,
+        -2.5744599342346186
+      ],
+      "reference_frame_id": "frame_0001",
+      "reference_frame_index": 1,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0001.png"
+    },
+    {
+      "node_id": "topo_040",
+      "type": "patrol_intersection",
+      "pixel": [
+        103,
+        103
+      ],
+      "position_xy": [
+        4.8336797714233395,
+        -2.274459934234619
+      ],
+      "reference_frame_id": "frame_0012",
+      "reference_frame_index": 12,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0012.png"
+    },
+    {
+      "node_id": "topo_042",
+      "type": "patrol_intersection",
+      "pixel": [
+        99,
+        103
+      ],
+      "position_xy": [
+        5.03367977142334,
+        -2.274459934234619
+      ],
+      "reference_frame_id": "frame_0234",
+      "reference_frame_index": 234,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0234.png"
+    },
+    {
+      "node_id": "topo_043",
+      "type": "patrol_intersection",
+      "pixel": [
+        80,
+        103
+      ],
+      "position_xy": [
+        5.98367977142334,
+        -2.274459934234619
+      ],
+      "reference_frame_id": "frame_0240",
+      "reference_frame_index": 240,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0240.png"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "corridor_000",
+      "from_node": "topo_000",
+      "to_node": "topo_039",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          139,
+          94
+        ],
+        [
+          135,
+          97
+        ]
+      ],
+      "pixel_length": 5.045045045045038,
+      "polyline_xy": [
+        [
+          3.0336797714233397,
+          -2.724459934234619
+        ],
+        [
+          3.23367977142334,
+          -2.5744599342346186
+        ]
+      ],
+      "length_m": 0.2522522522522519,
+      "cost": 0.2522522522522519
+    },
+    {
+      "edge_id": "corridor_001",
+      "from_node": "topo_039",
+      "to_node": "topo_001",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          135,
+          97
+        ],
+        [
+          131,
+          100
+        ]
+      ],
+      "pixel_length": 4.954954954954962,
+      "polyline_xy": [
+        [
+          3.23367977142334,
+          -2.5744599342346186
+        ],
+        [
+          3.433679771423339,
+          -2.424459934234619
+        ]
+      ],
+      "length_m": 0.2477477477477481,
+      "cost": 0.2477477477477481
+    },
+    {
+      "edge_id": "corridor_002",
+      "from_node": "topo_001",
+      "to_node": "topo_002",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          131,
+          100
+        ],
+        [
+          107,
+          100
+        ]
+      ],
+      "pixel_length": 24.0,
+      "polyline_xy": [
+        [
+          3.433679771423339,
+          -2.424459934234619
+        ],
+        [
+          4.633679771423339,
+          -2.424459934234619
+        ]
+      ],
+      "length_m": 1.2000000000000002,
+      "cost": 1.2000000000000002
+    },
+    {
+      "edge_id": "corridor_003",
+      "from_node": "topo_002",
+      "to_node": "topo_040",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          107,
+          100
+        ],
+        [
+          103,
+          103
+        ]
+      ],
+      "pixel_length": 5.009036932905658,
+      "polyline_xy": [
+        [
+          4.633679771423339,
+          -2.424459934234619
+        ],
+        [
+          4.8336797714233395,
+          -2.274459934234619
+        ]
+      ],
+      "length_m": 0.2504518466452829,
+      "cost": 0.2504518466452829
+    },
+    {
+      "edge_id": "corridor_004",
+      "from_node": "topo_040",
+      "to_node": "topo_003",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          103,
+          103
+        ],
+        [
+          90,
+          110
+        ]
+      ],
+      "pixel_length": 14.714045990410362,
+      "polyline_xy": [
+        [
+          4.8336797714233395,
+          -2.274459934234619
+        ],
+        [
+          5.48367977142334,
+          -1.9244599342346191
+        ]
+      ],
+      "length_m": 0.7357022995205181,
+      "cost": 0.7357022995205181
+    },
+    {
+      "edge_id": "corridor_005",
+      "from_node": "topo_003",
+      "to_node": "topo_004",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          90,
+          110
+        ],
+        [
+          74,
+          120
+        ]
+      ],
+      "pixel_length": 18.867962264113206,
+      "polyline_xy": [
+        [
+          5.48367977142334,
+          -1.9244599342346191
+        ],
+        [
+          6.28367977142334,
+          -1.4244599342346191
+        ]
+      ],
+      "length_m": 0.9433981132056604,
+      "cost": 0.9433981132056604
+    },
+    {
+      "edge_id": "corridor_006",
+      "from_node": "topo_004",
+      "to_node": "topo_005",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          74,
+          120
+        ],
+        [
+          84,
+          138
+        ]
+      ],
+      "pixel_length": 20.591260281974,
+      "polyline_xy": [
+        [
+          6.28367977142334,
+          -1.4244599342346191
+        ],
+        [
+          5.78367977142334,
+          -0.5244599342346188
+        ]
+      ],
+      "length_m": 1.0295630140987002,
+      "cost": 1.0295630140987002
+    },
+    {
+      "edge_id": "corridor_007",
+      "from_node": "topo_005",
+      "to_node": "topo_006",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          84,
+          138
+        ],
+        [
+          84,
+          164
+        ]
+      ],
+      "pixel_length": 26.0,
+      "polyline_xy": [
+        [
+          5.78367977142334,
+          -0.5244599342346188
+        ],
+        [
+          5.78367977142334,
+          0.7755400657653819
+        ]
+      ],
+      "length_m": 1.3,
+      "cost": 1.3
+    },
+    {
+      "edge_id": "corridor_008",
+      "from_node": "topo_006",
+      "to_node": "topo_007",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          84,
+          164
+        ],
+        [
+          83,
+          190
+        ]
+      ],
+      "pixel_length": 26.019223662515376,
+      "polyline_xy": [
+        [
+          5.78367977142334,
+          0.7755400657653819
+        ],
+        [
+          5.8336797714233395,
+          2.075540065765381
+        ]
+      ],
+      "length_m": 1.3009611831257688,
+      "cost": 1.3009611831257688
+    },
+    {
+      "edge_id": "corridor_009",
+      "from_node": "topo_007",
+      "to_node": "topo_008",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          83,
+          190
+        ],
+        [
+          92,
+          181
+        ]
+      ],
+      "pixel_length": 12.727922061357855,
+      "polyline_xy": [
+        [
+          5.8336797714233395,
+          2.075540065765381
+        ],
+        [
+          5.383679771423339,
+          1.6255400657653816
+        ]
+      ],
+      "length_m": 0.6363961030678928,
+      "cost": 0.6363961030678928
+    },
+    {
+      "edge_id": "corridor_010",
+      "from_node": "topo_008",
+      "to_node": "topo_009",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          92,
+          181
+        ],
+        [
+          93,
+          162
+        ]
+      ],
+      "pixel_length": 19.026297590440446,
+      "polyline_xy": [
+        [
+          5.383679771423339,
+          1.6255400657653816
+        ],
+        [
+          5.3336797714233395,
+          0.6755400657653805
+        ]
+      ],
+      "length_m": 0.9513148795220223,
+      "cost": 0.9513148795220223
+    },
+    {
+      "edge_id": "corridor_011",
+      "from_node": "topo_009",
+      "to_node": "topo_010",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          93,
+          162
+        ],
+        [
+          104,
+          151
+        ]
+      ],
+      "pixel_length": 15.556349186104045,
+      "polyline_xy": [
+        [
+          5.3336797714233395,
+          0.6755400657653805
+        ],
+        [
+          4.78367977142334,
+          0.12554006576538157
+        ]
+      ],
+      "length_m": 0.7778174593052023,
+      "cost": 0.7778174593052023
+    },
+    {
+      "edge_id": "corridor_012",
+      "from_node": "topo_010",
+      "to_node": "topo_011",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          104,
+          151
+        ],
+        [
+          136,
+          151
+        ]
+      ],
+      "pixel_length": 32.0,
+      "polyline_xy": [
+        [
+          4.78367977142334,
+          0.12554006576538157
+        ],
+        [
+          3.183679771423339,
+          0.12554006576538157
+        ]
+      ],
+      "length_m": 1.6,
+      "cost": 1.6
+    },
+    {
+      "edge_id": "corridor_013",
+      "from_node": "topo_011",
+      "to_node": "topo_012",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          136,
+          151
+        ],
+        [
+          168,
+          151
+        ]
+      ],
+      "pixel_length": 32.0,
+      "polyline_xy": [
+        [
+          3.183679771423339,
+          0.12554006576538157
+        ],
+        [
+          1.5836797714233395,
+          0.12554006576538157
+        ]
+      ],
+      "length_m": 1.6,
+      "cost": 1.6
+    },
+    {
+      "edge_id": "corridor_014",
+      "from_node": "topo_012",
+      "to_node": "topo_013",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          168,
+          151
+        ],
+        [
+          200,
+          151
+        ]
+      ],
+      "pixel_length": 32.0,
+      "polyline_xy": [
+        [
+          1.5836797714233395,
+          0.12554006576538157
+        ],
+        [
+          -0.016320228576660156,
+          0.12554006576538157
+        ]
+      ],
+      "length_m": 1.6,
+      "cost": 1.6
+    },
+    {
+      "edge_id": "corridor_015",
+      "from_node": "topo_013",
+      "to_node": "topo_014",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          200,
+          151
+        ],
+        [
+          232,
+          151
+        ]
+      ],
+      "pixel_length": 32.0,
+      "polyline_xy": [
+        [
+          -0.016320228576660156,
+          0.12554006576538157
+        ],
+        [
+          -1.6163202285766616,
+          0.12554006576538157
+        ]
+      ],
+      "length_m": 1.6,
+      "cost": 1.6
+    },
+    {
+      "edge_id": "corridor_016",
+      "from_node": "topo_014",
+      "to_node": "topo_015",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          232,
+          151
+        ],
+        [
+          232,
+          124
+        ]
+      ],
+      "pixel_length": 27.0,
+      "polyline_xy": [
+        [
+          -1.6163202285766616,
+          0.12554006576538157
+        ],
+        [
+          -1.6163202285766616,
+          -1.224459934234619
+        ]
+      ],
+      "length_m": 1.35,
+      "cost": 1.35
+    },
+    {
+      "edge_id": "corridor_017",
+      "from_node": "topo_015",
+      "to_node": "topo_016",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          232,
+          124
+        ],
+        [
+          232,
+          97
+        ]
+      ],
+      "pixel_length": 27.0,
+      "polyline_xy": [
+        [
+          -1.6163202285766616,
+          -1.224459934234619
+        ],
+        [
+          -1.6163202285766616,
+          -2.5744599342346186
+        ]
+      ],
+      "length_m": 1.35,
+      "cost": 1.35
+    },
+    {
+      "edge_id": "corridor_018",
+      "from_node": "topo_016",
+      "to_node": "topo_017",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          232,
+          97
+        ],
+        [
+          232,
+          70
+        ]
+      ],
+      "pixel_length": 27.0,
+      "polyline_xy": [
+        [
+          -1.6163202285766616,
+          -2.5744599342346186
+        ],
+        [
+          -1.6163202285766616,
+          -3.924459934234619
+        ]
+      ],
+      "length_m": 1.35,
+      "cost": 1.35
+    },
+    {
+      "edge_id": "corridor_019",
+      "from_node": "topo_017",
+      "to_node": "topo_018",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          232,
+          70
+        ],
+        [
+          232,
+          43
+        ]
+      ],
+      "pixel_length": 27.0,
+      "polyline_xy": [
+        [
+          -1.6163202285766616,
+          -3.924459934234619
+        ],
+        [
+          -1.6163202285766616,
+          -5.274459934234619
+        ]
+      ],
+      "length_m": 1.35,
+      "cost": 1.35
+    },
+    {
+      "edge_id": "corridor_020",
+      "from_node": "topo_018",
+      "to_node": "topo_019",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          232,
+          43
+        ],
+        [
+          231,
+          73
+        ]
+      ],
+      "pixel_length": 30.01666203960727,
+      "polyline_xy": [
+        [
+          -1.6163202285766616,
+          -5.274459934234619
+        ],
+        [
+          -1.5663202285766609,
+          -3.774459934234619
+        ]
+      ],
+      "length_m": 1.5008331019803636,
+      "cost": 1.5008331019803636
+    },
+    {
+      "edge_id": "corridor_021",
+      "from_node": "topo_019",
+      "to_node": "topo_020",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          231,
+          73
+        ],
+        [
+          218,
+          89
+        ]
+      ],
+      "pixel_length": 20.615528128088304,
+      "polyline_xy": [
+        [
+          -1.5663202285766609,
+          -3.774459934234619
+        ],
+        [
+          -0.9163202285766605,
+          -2.974459934234619
+        ]
+      ],
+      "length_m": 1.0307764064044151,
+      "cost": 1.0307764064044151
+    },
+    {
+      "edge_id": "corridor_022",
+      "from_node": "topo_020",
+      "to_node": "topo_021",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          218,
+          89
+        ],
+        [
+          191,
+          90
+        ]
+      ],
+      "pixel_length": 27.018512172212592,
+      "polyline_xy": [
+        [
+          -0.9163202285766605,
+          -2.974459934234619
+        ],
+        [
+          0.43367977142333913,
+          -2.924459934234619
+        ]
+      ],
+      "length_m": 1.3509256086106296,
+      "cost": 1.3509256086106296
+    },
+    {
+      "edge_id": "corridor_023",
+      "from_node": "topo_021",
+      "to_node": "topo_022",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          191,
+          90
+        ],
+        [
+          164,
+          90
+        ]
+      ],
+      "pixel_length": 27.0,
+      "polyline_xy": [
+        [
+          0.43367977142333913,
+          -2.924459934234619
+        ],
+        [
+          1.7836797714233388,
+          -2.924459934234619
+        ]
+      ],
+      "length_m": 1.35,
+      "cost": 1.35
+    },
+    {
+      "edge_id": "corridor_024",
+      "from_node": "topo_022",
+      "to_node": "topo_023",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          164,
+          90
+        ],
+        [
+          146,
+          101
+        ]
+      ],
+      "pixel_length": 21.095023109728988,
+      "polyline_xy": [
+        [
+          1.7836797714233388,
+          -2.924459934234619
+        ],
+        [
+          2.683679771423339,
+          -2.3744599342346184
+        ]
+      ],
+      "length_m": 1.0547511554864495,
+      "cost": 1.0547511554864495
+    },
+    {
+      "edge_id": "corridor_025",
+      "from_node": "topo_023",
+      "to_node": "topo_039",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          146,
+          101
+        ],
+        [
+          135,
+          97
+        ]
+      ],
+      "pixel_length": 11.729390676103314,
+      "polyline_xy": [
+        [
+          2.683679771423339,
+          -2.3744599342346184
+        ],
+        [
+          3.23367977142334,
+          -2.5744599342346186
+        ]
+      ],
+      "length_m": 0.5864695338051658,
+      "cost": 0.5864695338051658
+    },
+    {
+      "edge_id": "corridor_026",
+      "from_node": "topo_039",
+      "to_node": "topo_024",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          135,
+          97
+        ],
+        [
+          121,
+          92
+        ]
+      ],
+      "pixel_length": 14.84126983506953,
+      "polyline_xy": [
+        [
+          3.23367977142334,
+          -2.5744599342346186
+        ],
+        [
+          3.933679771423339,
+          -2.8244599342346186
+        ]
+      ],
+      "length_m": 0.7420634917534765,
+      "cost": 0.7420634917534765
+    },
+    {
+      "edge_id": "corridor_027",
+      "from_node": "topo_024",
+      "to_node": "topo_025",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          121,
+          92
+        ],
+        [
+          120,
+          59
+        ]
+      ],
+      "pixel_length": 33.015148038438355,
+      "polyline_xy": [
+        [
+          3.933679771423339,
+          -2.8244599342346186
+        ],
+        [
+          3.98367977142334,
+          -4.474459934234619
+        ]
+      ],
+      "length_m": 1.6507574019219178,
+      "cost": 1.6507574019219178
+    },
+    {
+      "edge_id": "corridor_028",
+      "from_node": "topo_025",
+      "to_node": "topo_026",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          120,
+          59
+        ],
+        [
+          106,
+          29
+        ]
+      ],
+      "pixel_length": 33.1058907144937,
+      "polyline_xy": [
+        [
+          3.98367977142334,
+          -4.474459934234619
+        ],
+        [
+          4.683679771423339,
+          -5.974459934234619
+        ]
+      ],
+      "length_m": 1.6552945357246849,
+      "cost": 1.6552945357246849
+    },
+    {
+      "edge_id": "corridor_029",
+      "from_node": "topo_026",
+      "to_node": "topo_027",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          106,
+          29
+        ],
+        [
+          108,
+          61
+        ]
+      ],
+      "pixel_length": 32.0624390837628,
+      "polyline_xy": [
+        [
+          4.683679771423339,
+          -5.974459934234619
+        ],
+        [
+          4.5836797714233395,
+          -4.374459934234618
+        ]
+      ],
+      "length_m": 1.6031219541881399,
+      "cost": 1.6031219541881399
+    },
+    {
+      "edge_id": "corridor_030",
+      "from_node": "topo_027",
+      "to_node": "topo_028",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          108,
+          61
+        ],
+        [
+          110,
+          93
+        ]
+      ],
+      "pixel_length": 32.0624390837628,
+      "polyline_xy": [
+        [
+          4.5836797714233395,
+          -4.374459934234618
+        ],
+        [
+          4.48367977142334,
+          -2.774459934234619
+        ]
+      ],
+      "length_m": 1.6031219541881399,
+      "cost": 1.6031219541881399
+    },
+    {
+      "edge_id": "corridor_031",
+      "from_node": "topo_028",
+      "to_node": "topo_029",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          110,
+          93
+        ],
+        [
+          101,
+          103
+        ]
+      ],
+      "pixel_length": 13.07464872180403,
+      "polyline_xy": [
+        [
+          4.48367977142334,
+          -2.774459934234619
+        ],
+        [
+          4.933679771423339,
+          -2.274459934234619
+        ]
+      ],
+      "length_m": 0.6537324360902015,
+      "cost": 0.6537324360902015
+    },
+    {
+      "edge_id": "corridor_032",
+      "from_node": "topo_029",
+      "to_node": "topo_042",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          101,
+          103
+        ],
+        [
+          99,
+          103
+        ]
+      ],
+      "pixel_length": 2.0,
+      "polyline_xy": [
+        [
+          4.933679771423339,
+          -2.274459934234619
+        ],
+        [
+          5.03367977142334,
+          -2.274459934234619
+        ]
+      ],
+      "length_m": 0.1,
+      "cost": 0.1
+    },
+    {
+      "edge_id": "corridor_033",
+      "from_node": "topo_042",
+      "to_node": "topo_043",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          99,
+          103
+        ],
+        [
+          80,
+          103
+        ]
+      ],
+      "pixel_length": 18.615384615384613,
+      "polyline_xy": [
+        [
+          5.03367977142334,
+          -2.274459934234619
+        ],
+        [
+          5.98367977142334,
+          -2.274459934234619
+        ]
+      ],
+      "length_m": 0.9307692307692307,
+      "cost": 0.9307692307692307
+    },
+    {
+      "edge_id": "corridor_034",
+      "from_node": "topo_043",
+      "to_node": "topo_030",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          80,
+          103
+        ],
+        [
+          77,
+          103
+        ]
+      ],
+      "pixel_length": 3.384615384615387,
+      "polyline_xy": [
+        [
+          5.98367977142334,
+          -2.274459934234619
+        ],
+        [
+          6.13367977142334,
+          -2.274459934234619
+        ]
+      ],
+      "length_m": 0.16923076923076935,
+      "cost": 0.16923076923076935
+    },
+    {
+      "edge_id": "corridor_035",
+      "from_node": "topo_030",
+      "to_node": "topo_031",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          77,
+          103
+        ],
+        [
+          53,
+          82
+        ]
+      ],
+      "pixel_length": 31.89043743820395,
+      "polyline_xy": [
+        [
+          6.13367977142334,
+          -2.274459934234619
+        ],
+        [
+          7.3336797714233395,
+          -3.3244599342346186
+        ]
+      ],
+      "length_m": 1.5945218719101977,
+      "cost": 1.5945218719101977
+    },
+    {
+      "edge_id": "corridor_036",
+      "from_node": "topo_031",
+      "to_node": "topo_032",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          53,
+          82
+        ],
+        [
+          22,
+          73
+        ]
+      ],
+      "pixel_length": 32.28002478313795,
+      "polyline_xy": [
+        [
+          7.3336797714233395,
+          -3.3244599342346186
+        ],
+        [
+          8.88367977142334,
+          -3.774459934234619
+        ]
+      ],
+      "length_m": 1.6140012391568974,
+      "cost": 1.6140012391568974
+    },
+    {
+      "edge_id": "corridor_037",
+      "from_node": "topo_032",
+      "to_node": "topo_033",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          22,
+          73
+        ],
+        [
+          50,
+          78
+        ]
+      ],
+      "pixel_length": 28.442925306655784,
+      "polyline_xy": [
+        [
+          8.88367977142334,
+          -3.774459934234619
+        ],
+        [
+          7.48367977142334,
+          -3.524459934234619
+        ]
+      ],
+      "length_m": 1.4221462653327892,
+      "cost": 1.4221462653327892
+    },
+    {
+      "edge_id": "corridor_038",
+      "from_node": "topo_033",
+      "to_node": "topo_034",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          50,
+          78
+        ],
+        [
+          66,
+          92
+        ]
+      ],
+      "pixel_length": 21.2602916254693,
+      "polyline_xy": [
+        [
+          7.48367977142334,
+          -3.524459934234619
+        ],
+        [
+          6.683679771423339,
+          -2.8244599342346186
+        ]
+      ],
+      "length_m": 1.063014581273465,
+      "cost": 1.063014581273465
+    },
+    {
+      "edge_id": "corridor_039",
+      "from_node": "topo_034",
+      "to_node": "topo_043",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          66,
+          92
+        ],
+        [
+          80,
+          103
+        ]
+      ],
+      "pixel_length": 18.108483088412285,
+      "polyline_xy": [
+        [
+          6.683679771423339,
+          -2.8244599342346186
+        ],
+        [
+          5.98367977142334,
+          -2.274459934234619
+        ]
+      ],
+      "length_m": 0.9054241544206143,
+      "cost": 0.9054241544206143
+    },
+    {
+      "edge_id": "corridor_040",
+      "from_node": "topo_043",
+      "to_node": "topo_035",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          80,
+          103
+        ],
+        [
+          83,
+          105
+        ]
+      ],
+      "pixel_length": 3.292451470620413,
+      "polyline_xy": [
+        [
+          5.98367977142334,
+          -2.274459934234619
+        ],
+        [
+          5.8336797714233395,
+          -2.174459934234619
+        ]
+      ],
+      "length_m": 0.16462257353102067,
+      "cost": 0.16462257353102067
+    },
+    {
+      "edge_id": "corridor_041",
+      "from_node": "topo_035",
+      "to_node": "topo_042",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          83,
+          105
+        ],
+        [
+          99,
+          103
+        ]
+      ],
+      "pixel_length": 16.1245154965971,
+      "polyline_xy": [
+        [
+          5.8336797714233395,
+          -2.174459934234619
+        ],
+        [
+          5.03367977142334,
+          -2.274459934234619
+        ]
+      ],
+      "length_m": 0.8062257748298549,
+      "cost": 0.8062257748298549
+    },
+    {
+      "edge_id": "corridor_042",
+      "from_node": "topo_042",
+      "to_node": "topo_029",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          99,
+          103
+        ],
+        [
+          101,
+          103
+        ]
+      ],
+      "pixel_length": 2.271058520647476,
+      "polyline_xy": [
+        [
+          5.03367977142334,
+          -2.274459934234619
+        ],
+        [
+          4.933679771423339,
+          -2.274459934234619
+        ]
+      ],
+      "length_m": 0.1135529260323738,
+      "cost": 0.1135529260323738
+    },
+    {
+      "edge_id": "corridor_043",
+      "from_node": "topo_029",
+      "to_node": "topo_040",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          101,
+          103
+        ],
+        [
+          103,
+          103
+        ]
+      ],
+      "pixel_length": 1.4401394904740792,
+      "polyline_xy": [
+        [
+          4.933679771423339,
+          -2.274459934234619
+        ],
+        [
+          4.8336797714233395,
+          -2.274459934234619
+        ]
+      ],
+      "length_m": 0.07200697452370396,
+      "cost": 0.07200697452370396
+    },
+    {
+      "edge_id": "corridor_044",
+      "from_node": "topo_040",
+      "to_node": "topo_036",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          103,
+          103
+        ],
+        [
+          107,
+          102
+        ]
+      ],
+      "pixel_length": 4.351059737176994,
+      "polyline_xy": [
+        [
+          4.8336797714233395,
+          -2.274459934234619
+        ],
+        [
+          4.633679771423339,
+          -2.3244599342346186
+        ]
+      ],
+      "length_m": 0.21755298685884972,
+      "cost": 0.21755298685884972
+    },
+    {
+      "edge_id": "corridor_045",
+      "from_node": "topo_036",
+      "to_node": "topo_001",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          107,
+          102
+        ],
+        [
+          131,
+          100
+        ]
+      ],
+      "pixel_length": 24.08318915758459,
+      "polyline_xy": [
+        [
+          4.633679771423339,
+          -2.3244599342346186
+        ],
+        [
+          3.433679771423339,
+          -2.424459934234619
+        ]
+      ],
+      "length_m": 1.2041594578792296,
+      "cost": 1.2041594578792296
+    },
+    {
+      "edge_id": "corridor_046",
+      "from_node": "topo_001",
+      "to_node": "topo_039",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          131,
+          100
+        ],
+        [
+          135,
+          97
+        ]
+      ],
+      "pixel_length": 4.954954954954962,
+      "polyline_xy": [
+        [
+          3.433679771423339,
+          -2.424459934234619
+        ],
+        [
+          3.23367977142334,
+          -2.5744599342346186
+        ]
+      ],
+      "length_m": 0.2477477477477481,
+      "cost": 0.2477477477477481
+    },
+    {
+      "edge_id": "corridor_047",
+      "from_node": "topo_039",
+      "to_node": "topo_000",
+      "undirected": true,
+      "polyline_pixel": [
+        [
+          135,
+          97
+        ],
+        [
+          139,
+          94
+        ]
+      ],
+      "pixel_length": 5.045045045045038,
+      "polyline_xy": [
+        [
+          3.23367977142334,
+          -2.5744599342346186
+        ],
+        [
+          3.0336797714233397,
+          -2.724459934234619
+        ]
+      ],
+      "length_m": 0.2522522522522519,
+      "cost": 0.2522522522522519
+    }
+  ],
+  "topology_keyframes": [
+    {
+      "topology_node_id": "topo_000",
+      "source_frame_id": "frame_0000",
+      "source_frame_index": 0,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0000.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_001",
+      "source_frame_id": "frame_0003",
+      "source_frame_index": 3,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0003.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_002",
+      "source_frame_id": "frame_0011",
+      "source_frame_index": 11,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0011.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_003",
+      "source_frame_id": "frame_0016",
+      "source_frame_index": 16,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0016.png",
+      "distance_pixel": 2.8284271247461903
+    },
+    {
+      "topology_node_id": "topo_004",
+      "source_frame_id": "frame_0022",
+      "source_frame_index": 22,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0022.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_005",
+      "source_frame_id": "frame_0028",
+      "source_frame_index": 28,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0028.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_006",
+      "source_frame_id": "frame_0037",
+      "source_frame_index": 37,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0037.png",
+      "distance_pixel": 1.0
+    },
+    {
+      "topology_node_id": "topo_007",
+      "source_frame_id": "frame_0046",
+      "source_frame_index": 46,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0046.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_008",
+      "source_frame_id": "frame_0049",
+      "source_frame_index": 49,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0049.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_009",
+      "source_frame_id": "frame_0055",
+      "source_frame_index": 55,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0055.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_010",
+      "source_frame_id": "frame_0059",
+      "source_frame_index": 59,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0059.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_011",
+      "source_frame_id": "frame_0070",
+      "source_frame_index": 70,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0070.png",
+      "distance_pixel": 1.0
+    },
+    {
+      "topology_node_id": "topo_012",
+      "source_frame_id": "frame_0080",
+      "source_frame_index": 80,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0080.png",
+      "distance_pixel": 1.0
+    },
+    {
+      "topology_node_id": "topo_013",
+      "source_frame_id": "frame_0091",
+      "source_frame_index": 91,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0091.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_014",
+      "source_frame_id": "frame_0102",
+      "source_frame_index": 102,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0102.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_015",
+      "source_frame_id": "frame_0111",
+      "source_frame_index": 111,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0111.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_016",
+      "source_frame_id": "frame_0120",
+      "source_frame_index": 120,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0120.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_017",
+      "source_frame_id": "frame_0129",
+      "source_frame_index": 129,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0129.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_018",
+      "source_frame_id": "frame_0138",
+      "source_frame_index": 138,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0138.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_019",
+      "source_frame_id": "frame_0148",
+      "source_frame_index": 148,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0148.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_020",
+      "source_frame_id": "frame_0153",
+      "source_frame_index": 153,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0153.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_021",
+      "source_frame_id": "frame_0162",
+      "source_frame_index": 162,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0162.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_022",
+      "source_frame_id": "frame_0171",
+      "source_frame_index": 171,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0171.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_023",
+      "source_frame_id": "frame_0177",
+      "source_frame_index": 177,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0177.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_024",
+      "source_frame_id": "frame_0186",
+      "source_frame_index": 186,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0186.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_025",
+      "source_frame_id": "frame_0197",
+      "source_frame_index": 197,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0197.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_026",
+      "source_frame_id": "frame_0207",
+      "source_frame_index": 207,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0207.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_027",
+      "source_frame_id": "frame_0218",
+      "source_frame_index": 218,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0218.png",
+      "distance_pixel": 1.0
+    },
+    {
+      "topology_node_id": "topo_028",
+      "source_frame_id": "frame_0229",
+      "source_frame_index": 229,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0229.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_029",
+      "source_frame_id": "frame_0233",
+      "source_frame_index": 233,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0233.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_030",
+      "source_frame_id": "frame_0241",
+      "source_frame_index": 241,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0241.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_031",
+      "source_frame_id": "frame_0249",
+      "source_frame_index": 249,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0249.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_032",
+      "source_frame_id": "frame_0259",
+      "source_frame_index": 259,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0259.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_033",
+      "source_frame_id": "frame_0269",
+      "source_frame_index": 269,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0269.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_034",
+      "source_frame_id": "frame_0245",
+      "source_frame_index": 245,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0245.png",
+      "distance_pixel": 1.0
+    },
+    {
+      "topology_node_id": "topo_035",
+      "source_frame_id": "frame_0239",
+      "source_frame_index": 239,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0239.png",
+      "distance_pixel": 0.0
+    },
+    {
+      "topology_node_id": "topo_036",
+      "source_frame_id": "frame_0011",
+      "source_frame_index": 11,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0011.png",
+      "distance_pixel": 2.0
+    },
+    {
+      "topology_node_id": "topo_039",
+      "source_frame_id": "frame_0001",
+      "source_frame_index": 1,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0001.png",
+      "distance_pixel": 2.0
+    },
+    {
+      "topology_node_id": "topo_040",
+      "source_frame_id": "frame_0012",
+      "source_frame_index": 12,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0012.png",
+      "distance_pixel": 1.4142135623730951
+    },
+    {
+      "topology_node_id": "topo_042",
+      "source_frame_id": "frame_0234",
+      "source_frame_index": 234,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0234.png",
+      "distance_pixel": 1.0
+    },
+    {
+      "topology_node_id": "topo_043",
+      "source_frame_id": "frame_0240",
+      "source_frame_index": 240,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0240.png",
+      "distance_pixel": 1.0
+    }
+  ],
+  "visual_anchors_legacy": [
+    {
+      "node_id": "node_000",
+      "source_frame_id": "frame_0000",
+      "source_frame_index": 0,
+      "timestamp_s": 0.0,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0000.png",
+      "visual_feature_count": 601
+    },
+    {
+      "node_id": "node_001",
+      "source_frame_id": "frame_0015",
+      "source_frame_index": 15,
+      "timestamp_s": 1.5,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0015.png",
+      "visual_feature_count": 601
+    },
+    {
+      "node_id": "node_002",
+      "source_frame_id": "frame_0025",
+      "source_frame_index": 25,
+      "timestamp_s": 2.5,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0025.png",
+      "visual_feature_count": 588
+    },
+    {
+      "node_id": "node_003",
+      "source_frame_id": "frame_0046",
+      "source_frame_index": 46,
+      "timestamp_s": 4.6,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0046.png",
+      "visual_feature_count": 600
+    },
+    {
+      "node_id": "node_004",
+      "source_frame_id": "frame_0056",
+      "source_frame_index": 56,
+      "timestamp_s": 5.6,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0056.png",
+      "visual_feature_count": 602
+    },
+    {
+      "node_id": "node_005",
+      "source_frame_id": "frame_0070",
+      "source_frame_index": 70,
+      "timestamp_s": 7.0,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0070.png",
+      "visual_feature_count": 600
+    },
+    {
+      "node_id": "node_006",
+      "source_frame_id": "frame_0095",
+      "source_frame_index": 95,
+      "timestamp_s": 9.5,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0095.png",
+      "visual_feature_count": 601
+    },
+    {
+      "node_id": "node_007",
+      "source_frame_id": "frame_0103",
+      "source_frame_index": 103,
+      "timestamp_s": 10.3,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0103.png",
+      "visual_feature_count": 601
+    },
+    {
+      "node_id": "node_008",
+      "source_frame_id": "frame_0115",
+      "source_frame_index": 115,
+      "timestamp_s": 11.5,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0115.png",
+      "visual_feature_count": 600
+    },
+    {
+      "node_id": "node_009",
+      "source_frame_id": "frame_0138",
+      "source_frame_index": 138,
+      "timestamp_s": 13.8,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0138.png",
+      "visual_feature_count": 600
+    },
+    {
+      "node_id": "node_010",
+      "source_frame_id": "frame_0149",
+      "source_frame_index": 149,
+      "timestamp_s": 14.9,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0149.png",
+      "visual_feature_count": 601
+    },
+    {
+      "node_id": "node_011",
+      "source_frame_id": "frame_0162",
+      "source_frame_index": 162,
+      "timestamp_s": 16.2,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0162.png",
+      "visual_feature_count": 601
+    },
+    {
+      "node_id": "node_012",
+      "source_frame_id": "frame_0182",
+      "source_frame_index": 182,
+      "timestamp_s": 18.2,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0182.png",
+      "visual_feature_count": 601
+    },
+    {
+      "node_id": "node_013",
+      "source_frame_id": "frame_0190",
+      "source_frame_index": 190,
+      "timestamp_s": 19.0,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0190.png",
+      "visual_feature_count": 600
+    },
+    {
+      "node_id": "node_014",
+      "source_frame_id": "frame_0207",
+      "source_frame_index": 207,
+      "timestamp_s": 20.7,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0207.png",
+      "visual_feature_count": 600
+    },
+    {
+      "node_id": "node_015",
+      "source_frame_id": "frame_0220",
+      "source_frame_index": 220,
+      "timestamp_s": 22.0,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0220.png",
+      "visual_feature_count": 601
+    },
+    {
+      "node_id": "node_016",
+      "source_frame_id": "frame_0240",
+      "source_frame_index": 240,
+      "timestamp_s": 24.0,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0240.png",
+      "visual_feature_count": 601
+    },
+    {
+      "node_id": "node_017",
+      "source_frame_id": "frame_0250",
+      "source_frame_index": 250,
+      "timestamp_s": 25.0,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0250.png",
+      "visual_feature_count": 601
+    },
+    {
+      "node_id": "node_018",
+      "source_frame_id": "frame_0267",
+      "source_frame_index": 267,
+      "timestamp_s": 26.7,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0267.png",
+      "visual_feature_count": 601
+    },
+    {
+      "node_id": "node_019",
+      "source_frame_id": "frame_0280",
+      "source_frame_index": 280,
+      "timestamp_s": 28.0,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0280.png",
+      "visual_feature_count": 601
+    },
+    {
+      "node_id": "node_020",
+      "source_frame_id": "frame_0296",
+      "source_frame_index": 296,
+      "timestamp_s": 29.6,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0296.png",
+      "visual_feature_count": 601
+    },
+    {
+      "node_id": "node_021",
+      "source_frame_id": "frame_0299",
+      "source_frame_index": 299,
+      "timestamp_s": 29.9,
+      "reference_rgb_uri": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/patrol/renders/frame_0299.png",
+      "visual_feature_count": 600
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "navmem3d"
+version = "0.1.0"
+description = "Compile reconstructed 3D worlds into queryable navigation memory."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "Apache-2.0"}
+
+[project.scripts]
+navmem3d = "navmem3d.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

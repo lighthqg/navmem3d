@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1",
+  "policy": "do_not_spend_until_local_preflight_passes",
+  "maximum_paid_generations": 2,
+  "calls": [
+    {
+      "order": 1,
+      "mode": "draft_video",
+      "input": "artifacts/interiorgs_0001_839920/patrol/interiorgs_0001_patrol_30s.mp4",
+      "purpose": "check whether the limited robot patrol preserves scene identity and gross geometry",
+      "acceptance": [
+        "all major walls and floor are coherent",
+        "no duplicated room or catastrophic camera jump",
+        "major furniture survives"
+      ],
+      "continue_if": "all acceptance items pass"
+    },
+    {
+      "order": 2,
+      "mode": "marble_1_1_video",
+      "input": "artifacts/interiorgs_0001_839920/patrol/interiorgs_0001_patrol_30s.mp4",
+      "purpose": "produce the only formal asset for semantic compilation",
+      "required_outputs": [
+        "full_resolution_ply",
+        "low_resolution_ply",
+        "collider_glb",
+        "caption",
+        "metric_scale_factor",
+        "ground_plane_offset"
+      ]
+    }
+  ],
+  "fallback": {
+    "mode": "marble_1_1_multi_image",
+    "input": "artifacts/interiorgs_0001_839920/patrol/marble_8_images",
+    "condition": "use only if the video input is rejected or produces documented reconstruction failure"
+  },
+  "visibility": "private",
+  "retry_rule": "retry only for a documented backend failure; do not tune prompts by paid trial and error"
+}

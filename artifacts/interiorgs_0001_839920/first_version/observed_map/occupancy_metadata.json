@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.2",
+  "type": "robot_observed_occupancy",
+  "source_manifest": "/home/hqg/Documents/Projects/DroidUp_/navmem3d/artifacts/interiorgs_0001_839920/first_version/rgbd_observed/robot_patrol_rgbd_manifest.json",
+  "hidden_occupancy_consumed": false,
+  "hidden_labels_consumed": false,
+  "state_encoding": {
+    "occupied": 0,
+    "unknown": 127,
+    "free": 255
+  },
+  "scale_m": 0.05,
+  "origin_xy": [
+    -5.187339735031129,
+    -13.23497653840933
+  ],
+  "width": 403,
+  "height": 364,
+  "robot_radius_m": 0.2,
+  "depth_sample_stride": 8,
+  "observed_free_cells": 18872,
+  "observed_occupied_cells": 62281,
+  "unknown_cells": 65539
+}

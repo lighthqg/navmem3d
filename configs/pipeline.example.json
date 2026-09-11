@@ -1,0 +1,18 @@
+{
+  "world_builder": "local_3dgs",
+  "frame_selection": {
+    "strategy": "pose-coverage",
+    "count": 8,
+    "rotation_weight_m": 0.5
+  },
+  "rendering": {
+    "width": 1024,
+    "height": 768,
+    "top_k_contributors": 8
+  },
+  "semantic_compiler": {
+    "level": "L0",
+    "vocabulary_uri": "vocab.zh_en.json"
+  }
+}
+

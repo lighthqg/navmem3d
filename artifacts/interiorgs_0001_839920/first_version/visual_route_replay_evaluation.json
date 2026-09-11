@@ -1,0 +1,720 @@
+{
+  "schema_version": "0.1",
+  "protocol": "held_out_patrol_frame_to_visual_route_node; occupancy_and_world_pose_not_read",
+  "query_count": 42,
+  "localized_count": 39,
+  "localized_rate": 0.9285714285714286,
+  "correct_edge_association_count": 39,
+  "correct_edge_association_rate": 1.0,
+  "results": [
+    {
+      "query_frame_index": 1,
+      "edge_id": "edge_000",
+      "expected_edge_endpoints": [
+        "node_000",
+        "node_001"
+      ],
+      "predicted_node_id": "node_000",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_000",
+        "source_frame_id": "frame_0000",
+        "ratio_matches": 267,
+        "homography_inliers": 216
+      }
+    },
+    {
+      "query_frame_index": 14,
+      "edge_id": "edge_000",
+      "expected_edge_endpoints": [
+        "node_000",
+        "node_001"
+      ],
+      "predicted_node_id": "node_001",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_001",
+        "source_frame_id": "frame_0015",
+        "ratio_matches": 565,
+        "homography_inliers": 516
+      }
+    },
+    {
+      "query_frame_index": 16,
+      "edge_id": "edge_001",
+      "expected_edge_endpoints": [
+        "node_001",
+        "node_002"
+      ],
+      "predicted_node_id": "node_001",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_001",
+        "source_frame_id": "frame_0015",
+        "ratio_matches": 507,
+        "homography_inliers": 470
+      }
+    },
+    {
+      "query_frame_index": 24,
+      "edge_id": "edge_001",
+      "expected_edge_endpoints": [
+        "node_001",
+        "node_002"
+      ],
+      "predicted_node_id": "node_002",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_002",
+        "source_frame_id": "frame_0025",
+        "ratio_matches": 187,
+        "homography_inliers": 145
+      }
+    },
+    {
+      "query_frame_index": 26,
+      "edge_id": "edge_002",
+      "expected_edge_endpoints": [
+        "node_002",
+        "node_003"
+      ],
+      "predicted_node_id": "node_002",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_002",
+        "source_frame_id": "frame_0025",
+        "ratio_matches": 261,
+        "homography_inliers": 217
+      }
+    },
+    {
+      "query_frame_index": 45,
+      "edge_id": "edge_002",
+      "expected_edge_endpoints": [
+        "node_002",
+        "node_003"
+      ],
+      "predicted_node_id": null,
+      "status": "no_query_features",
+      "correct_edge_association": false,
+      "best": null
+    },
+    {
+      "query_frame_index": 47,
+      "edge_id": "edge_003",
+      "expected_edge_endpoints": [
+        "node_003",
+        "node_004"
+      ],
+      "predicted_node_id": "node_003",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_003",
+        "source_frame_id": "frame_0046",
+        "ratio_matches": 291,
+        "homography_inliers": 250
+      }
+    },
+    {
+      "query_frame_index": 55,
+      "edge_id": "edge_003",
+      "expected_edge_endpoints": [
+        "node_003",
+        "node_004"
+      ],
+      "predicted_node_id": "node_004",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_004",
+        "source_frame_id": "frame_0056",
+        "ratio_matches": 325,
+        "homography_inliers": 242
+      }
+    },
+    {
+      "query_frame_index": 57,
+      "edge_id": "edge_004",
+      "expected_edge_endpoints": [
+        "node_004",
+        "node_005"
+      ],
+      "predicted_node_id": "node_004",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_004",
+        "source_frame_id": "frame_0056",
+        "ratio_matches": 374,
+        "homography_inliers": 310
+      }
+    },
+    {
+      "query_frame_index": 69,
+      "edge_id": "edge_004",
+      "expected_edge_endpoints": [
+        "node_004",
+        "node_005"
+      ],
+      "predicted_node_id": "node_005",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_005",
+        "source_frame_id": "frame_0070",
+        "ratio_matches": 374,
+        "homography_inliers": 324
+      }
+    },
+    {
+      "query_frame_index": 71,
+      "edge_id": "edge_005",
+      "expected_edge_endpoints": [
+        "node_005",
+        "node_006"
+      ],
+      "predicted_node_id": "node_005",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_005",
+        "source_frame_id": "frame_0070",
+        "ratio_matches": 457,
+        "homography_inliers": 389
+      }
+    },
+    {
+      "query_frame_index": 94,
+      "edge_id": "edge_005",
+      "expected_edge_endpoints": [
+        "node_005",
+        "node_006"
+      ],
+      "predicted_node_id": "node_006",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_006",
+        "source_frame_id": "frame_0095",
+        "ratio_matches": 526,
+        "homography_inliers": 488
+      }
+    },
+    {
+      "query_frame_index": 96,
+      "edge_id": "edge_006",
+      "expected_edge_endpoints": [
+        "node_006",
+        "node_007"
+      ],
+      "predicted_node_id": "node_006",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_006",
+        "source_frame_id": "frame_0095",
+        "ratio_matches": 279,
+        "homography_inliers": 240
+      }
+    },
+    {
+      "query_frame_index": 102,
+      "edge_id": "edge_006",
+      "expected_edge_endpoints": [
+        "node_006",
+        "node_007"
+      ],
+      "predicted_node_id": "node_007",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_007",
+        "source_frame_id": "frame_0103",
+        "ratio_matches": 652,
+        "homography_inliers": 514
+      }
+    },
+    {
+      "query_frame_index": 104,
+      "edge_id": "edge_007",
+      "expected_edge_endpoints": [
+        "node_007",
+        "node_008"
+      ],
+      "predicted_node_id": "node_007",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_007",
+        "source_frame_id": "frame_0103",
+        "ratio_matches": 700,
+        "homography_inliers": 589
+      }
+    },
+    {
+      "query_frame_index": 114,
+      "edge_id": "edge_007",
+      "expected_edge_endpoints": [
+        "node_007",
+        "node_008"
+      ],
+      "predicted_node_id": "node_008",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_008",
+        "source_frame_id": "frame_0115",
+        "ratio_matches": 585,
+        "homography_inliers": 430
+      }
+    },
+    {
+      "query_frame_index": 116,
+      "edge_id": "edge_008",
+      "expected_edge_endpoints": [
+        "node_008",
+        "node_009"
+      ],
+      "predicted_node_id": "node_008",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_008",
+        "source_frame_id": "frame_0115",
+        "ratio_matches": 512,
+        "homography_inliers": 421
+      }
+    },
+    {
+      "query_frame_index": 137,
+      "edge_id": "edge_008",
+      "expected_edge_endpoints": [
+        "node_008",
+        "node_009"
+      ],
+      "predicted_node_id": "node_013",
+      "status": "insufficient_visual_evidence",
+      "correct_edge_association": false,
+      "best": {
+        "node_id": "node_013",
+        "source_frame_id": "frame_0190",
+        "ratio_matches": 4,
+        "homography_inliers": 4
+      }
+    },
+    {
+      "query_frame_index": 139,
+      "edge_id": "edge_009",
+      "expected_edge_endpoints": [
+        "node_009",
+        "node_010"
+      ],
+      "predicted_node_id": "node_009",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_009",
+        "source_frame_id": "frame_0138",
+        "ratio_matches": 346,
+        "homography_inliers": 271
+      }
+    },
+    {
+      "query_frame_index": 148,
+      "edge_id": "edge_009",
+      "expected_edge_endpoints": [
+        "node_009",
+        "node_010"
+      ],
+      "predicted_node_id": "node_010",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_010",
+        "source_frame_id": "frame_0149",
+        "ratio_matches": 306,
+        "homography_inliers": 294
+      }
+    },
+    {
+      "query_frame_index": 150,
+      "edge_id": "edge_010",
+      "expected_edge_endpoints": [
+        "node_010",
+        "node_011"
+      ],
+      "predicted_node_id": "node_010",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_010",
+        "source_frame_id": "frame_0149",
+        "ratio_matches": 469,
+        "homography_inliers": 405
+      }
+    },
+    {
+      "query_frame_index": 161,
+      "edge_id": "edge_010",
+      "expected_edge_endpoints": [
+        "node_010",
+        "node_011"
+      ],
+      "predicted_node_id": "node_011",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_011",
+        "source_frame_id": "frame_0162",
+        "ratio_matches": 877,
+        "homography_inliers": 823
+      }
+    },
+    {
+      "query_frame_index": 163,
+      "edge_id": "edge_011",
+      "expected_edge_endpoints": [
+        "node_011",
+        "node_012"
+      ],
+      "predicted_node_id": "node_011",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_011",
+        "source_frame_id": "frame_0162",
+        "ratio_matches": 904,
+        "homography_inliers": 818
+      }
+    },
+    {
+      "query_frame_index": 181,
+      "edge_id": "edge_011",
+      "expected_edge_endpoints": [
+        "node_011",
+        "node_012"
+      ],
+      "predicted_node_id": "node_012",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_012",
+        "source_frame_id": "frame_0182",
+        "ratio_matches": 462,
+        "homography_inliers": 407
+      }
+    },
+    {
+      "query_frame_index": 183,
+      "edge_id": "edge_012",
+      "expected_edge_endpoints": [
+        "node_012",
+        "node_013"
+      ],
+      "predicted_node_id": "node_012",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_012",
+        "source_frame_id": "frame_0182",
+        "ratio_matches": 886,
+        "homography_inliers": 801
+      }
+    },
+    {
+      "query_frame_index": 189,
+      "edge_id": "edge_012",
+      "expected_edge_endpoints": [
+        "node_012",
+        "node_013"
+      ],
+      "predicted_node_id": "node_013",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_013",
+        "source_frame_id": "frame_0190",
+        "ratio_matches": 391,
+        "homography_inliers": 303
+      }
+    },
+    {
+      "query_frame_index": 191,
+      "edge_id": "edge_013",
+      "expected_edge_endpoints": [
+        "node_013",
+        "node_014"
+      ],
+      "predicted_node_id": "node_013",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_013",
+        "source_frame_id": "frame_0190",
+        "ratio_matches": 405,
+        "homography_inliers": 333
+      }
+    },
+    {
+      "query_frame_index": 206,
+      "edge_id": "edge_013",
+      "expected_edge_endpoints": [
+        "node_013",
+        "node_014"
+      ],
+      "predicted_node_id": "node_011",
+      "status": "insufficient_visual_evidence",
+      "correct_edge_association": false,
+      "best": {
+        "node_id": "node_011",
+        "source_frame_id": "frame_0162",
+        "ratio_matches": 6,
+        "homography_inliers": 4
+      }
+    },
+    {
+      "query_frame_index": 208,
+      "edge_id": "edge_014",
+      "expected_edge_endpoints": [
+        "node_014",
+        "node_015"
+      ],
+      "predicted_node_id": "node_014",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_014",
+        "source_frame_id": "frame_0207",
+        "ratio_matches": 937,
+        "homography_inliers": 886
+      }
+    },
+    {
+      "query_frame_index": 219,
+      "edge_id": "edge_014",
+      "expected_edge_endpoints": [
+        "node_014",
+        "node_015"
+      ],
+      "predicted_node_id": "node_015",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_015",
+        "source_frame_id": "frame_0220",
+        "ratio_matches": 496,
+        "homography_inliers": 458
+      }
+    },
+    {
+      "query_frame_index": 221,
+      "edge_id": "edge_015",
+      "expected_edge_endpoints": [
+        "node_015",
+        "node_016"
+      ],
+      "predicted_node_id": "node_015",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_015",
+        "source_frame_id": "frame_0220",
+        "ratio_matches": 530,
+        "homography_inliers": 501
+      }
+    },
+    {
+      "query_frame_index": 239,
+      "edge_id": "edge_015",
+      "expected_edge_endpoints": [
+        "node_015",
+        "node_016"
+      ],
+      "predicted_node_id": "node_016",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_016",
+        "source_frame_id": "frame_0240",
+        "ratio_matches": 760,
+        "homography_inliers": 720
+      }
+    },
+    {
+      "query_frame_index": 241,
+      "edge_id": "edge_016",
+      "expected_edge_endpoints": [
+        "node_016",
+        "node_017"
+      ],
+      "predicted_node_id": "node_016",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_016",
+        "source_frame_id": "frame_0240",
+        "ratio_matches": 496,
+        "homography_inliers": 444
+      }
+    },
+    {
+      "query_frame_index": 249,
+      "edge_id": "edge_016",
+      "expected_edge_endpoints": [
+        "node_016",
+        "node_017"
+      ],
+      "predicted_node_id": "node_017",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_017",
+        "source_frame_id": "frame_0250",
+        "ratio_matches": 717,
+        "homography_inliers": 697
+      }
+    },
+    {
+      "query_frame_index": 251,
+      "edge_id": "edge_017",
+      "expected_edge_endpoints": [
+        "node_017",
+        "node_018"
+      ],
+      "predicted_node_id": "node_017",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_017",
+        "source_frame_id": "frame_0250",
+        "ratio_matches": 1154,
+        "homography_inliers": 1132
+      }
+    },
+    {
+      "query_frame_index": 266,
+      "edge_id": "edge_017",
+      "expected_edge_endpoints": [
+        "node_017",
+        "node_018"
+      ],
+      "predicted_node_id": "node_018",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_018",
+        "source_frame_id": "frame_0267",
+        "ratio_matches": 814,
+        "homography_inliers": 761
+      }
+    },
+    {
+      "query_frame_index": 268,
+      "edge_id": "edge_018",
+      "expected_edge_endpoints": [
+        "node_018",
+        "node_019"
+      ],
+      "predicted_node_id": "node_018",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_018",
+        "source_frame_id": "frame_0267",
+        "ratio_matches": 818,
+        "homography_inliers": 714
+      }
+    },
+    {
+      "query_frame_index": 279,
+      "edge_id": "edge_018",
+      "expected_edge_endpoints": [
+        "node_018",
+        "node_019"
+      ],
+      "predicted_node_id": "node_019",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_019",
+        "source_frame_id": "frame_0280",
+        "ratio_matches": 380,
+        "homography_inliers": 347
+      }
+    },
+    {
+      "query_frame_index": 281,
+      "edge_id": "edge_019",
+      "expected_edge_endpoints": [
+        "node_019",
+        "node_020"
+      ],
+      "predicted_node_id": "node_019",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_019",
+        "source_frame_id": "frame_0280",
+        "ratio_matches": 621,
+        "homography_inliers": 589
+      }
+    },
+    {
+      "query_frame_index": 295,
+      "edge_id": "edge_019",
+      "expected_edge_endpoints": [
+        "node_019",
+        "node_020"
+      ],
+      "predicted_node_id": "node_020",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_020",
+        "source_frame_id": "frame_0296",
+        "ratio_matches": 344,
+        "homography_inliers": 316
+      }
+    },
+    {
+      "query_frame_index": 297,
+      "edge_id": "edge_020",
+      "expected_edge_endpoints": [
+        "node_020",
+        "node_021"
+      ],
+      "predicted_node_id": "node_020",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_020",
+        "source_frame_id": "frame_0296",
+        "ratio_matches": 398,
+        "homography_inliers": 350
+      }
+    },
+    {
+      "query_frame_index": 298,
+      "edge_id": "edge_020",
+      "expected_edge_endpoints": [
+        "node_020",
+        "node_021"
+      ],
+      "predicted_node_id": "node_021",
+      "status": "localized",
+      "correct_edge_association": true,
+      "best": {
+        "node_id": "node_021",
+        "source_frame_id": "frame_0299",
+        "ratio_matches": 414,
+        "homography_inliers": 345
+      }
+    }
+  ]
+}
