@@ -165,6 +165,11 @@ def build_parser() -> argparse.ArgumentParser:
     gsplat_parser.add_argument("--device", default="cuda")
     gsplat_parser.add_argument("--top-contributors", type=int, default=0)
     gsplat_parser.add_argument(
+        "--export-depth",
+        action="store_true",
+        help="write dense expected-depth maps from the Gaussian rasterizer",
+    )
+    gsplat_parser.add_argument(
         "--trajectory", type=Path, help="render exact camera poses from a patrol JSON"
     )
 
@@ -543,6 +548,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 device=args.device,
                 top_contributors=args.top_contributors,
                 trajectory_path=args.trajectory,
+                export_depth=args.export_depth,
             )
             print(
                 json.dumps(

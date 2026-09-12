@@ -18,6 +18,7 @@ def render_gsplat_views(
     device: str = "cuda",
     top_contributors: int = 0,
     trajectory_path: str | Path | None = None,
+    export_depth: bool = False,
 ) -> dict[str, object]:
     """Render compact splats and optionally retain exact per-pixel contributors.
 
@@ -183,7 +184,10 @@ def render_gsplat_views(
                 far_plane=1000.0,
                 packed=True,
                 backgrounds=raster_background,
-                render_mode="RGB",
+                # Expected depth is a dense surface estimate produced by the
+                # same anisotropic Gaussian rasterizer as RGB.  It is not the
+                # old sparse Gaussian-center z-buffer fallback.
+                render_mode="RGB+ED" if export_depth else "RGB",
                 rasterize_mode="classic",
             )
             if top_contributors:
@@ -214,6 +218,13 @@ def render_gsplat_views(
         stem = str(camera_spec.get("frame_id", f"view_{index:03d}"))
         Image.fromarray(rgb).save(destination / f"{stem}.png")
         Image.fromarray(alpha_image).save(destination / f"{stem}_alpha.png")
+        depth_uri = None
+        if export_depth:
+            depth = rendered[0, ..., 3].cpu().numpy().astype(np.float32)
+            # Expected depth is undefined when no Gaussian contributed.
+            depth[alpha[0, ..., 0].cpu().numpy() <= 1e-4] = 0.0
+            depth_uri = f"{stem}_depth.npy"
+            np.save(destination / depth_uri, depth)
         contributor_id_uri = None
         contributor_weight_uri = None
         if top_contributors:
@@ -232,6 +243,7 @@ def render_gsplat_views(
                 "view_id": stem,
                 "rgb_uri": f"{stem}.png",
                 "alpha_uri": f"{stem}_alpha.png",
+                "depth_uri": depth_uri,
                 "top_contributor_ids_uri": contributor_id_uri,
                 "top_contributor_weights_uri": contributor_weight_uri,
                 "camera_position": eye.tolist(),
@@ -252,6 +264,7 @@ def render_gsplat_views(
         "image_size": [width, height],
         "horizontal_fov_deg": horizontal_fov_deg,
         "top_contributors": top_contributors,
+        "depth_mode": "expected_gaussian_depth" if export_depth else None,
         "trajectory_uri": str(Path(trajectory_path).resolve())
         if trajectory_path is not None
         else None,
