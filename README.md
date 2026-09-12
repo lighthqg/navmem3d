@@ -35,6 +35,7 @@ B 不直接向控制器发送坐标。语义编译器把 Marble 实体绑定到 
 
 正式方案和数据流见：
 
+- [`docs/PROGRESS_AND_EVALUATION_PLAN.zh-CN.md`](docs/PROGRESS_AND_EVALUATION_PLAN.zh-CN.md)
 - [`docs/first_version_route_contract.md`](docs/first_version_route_contract.md)
 - [`artifacts/interiorgs_0001_839920/first_version/TOPOLOGY_SEMANTIC_HANDOFF.zh-CN.md`](artifacts/interiorgs_0001_839920/first_version/TOPOLOGY_SEMANTIC_HANDOFF.zh-CN.md)
 - [`artifacts/interiorgs_0001_839920/first_version/LAYERED_MAP_CONTRACT.zh-CN.md`](artifacts/interiorgs_0001_839920/first_version/LAYERED_MAP_CONTRACT.zh-CN.md)
