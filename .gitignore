@@ -58,3 +58,8 @@ artifacts/**
 !artifacts/interiorgs_0001_839920/first_version/observed_map/occupancy_metadata.json
 third_party/*
 !third_party/README.md
+# Local diagnostic scripts superseded by the source-only KDE M-map pipeline.
+# The collider path is intentionally excluded: a Marble B collider cannot be
+# represented as a robot-observed M map.
+scripts/build_b_collider_occupancy.py
+scripts/build_splat_geometry_occupancy.py
