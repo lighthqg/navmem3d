@@ -36,6 +36,7 @@ B 不直接向控制器发送坐标。语义编译器把 Marble 实体绑定到 
 正式方案和数据流见：
 
 - [`docs/PROGRESS_AND_EVALUATION_PLAN.zh-CN.md`](docs/PROGRESS_AND_EVALUATION_PLAN.zh-CN.md)
+- [`docs/MAP_SEMANTIC_HANDOFF.zh-CN.md`](docs/MAP_SEMANTIC_HANDOFF.zh-CN.md)
 - [`docs/first_version_route_contract.md`](docs/first_version_route_contract.md)
 - [`artifacts/interiorgs_0001_839920/first_version/TOPOLOGY_SEMANTIC_HANDOFF.zh-CN.md`](artifacts/interiorgs_0001_839920/first_version/TOPOLOGY_SEMANTIC_HANDOFF.zh-CN.md)
 - [`artifacts/interiorgs_0001_839920/first_version/LAYERED_MAP_CONTRACT.zh-CN.md`](artifacts/interiorgs_0001_839920/first_version/LAYERED_MAP_CONTRACT.zh-CN.md)
@@ -68,6 +69,8 @@ PYTHONPATH=src python3 scripts/render_layered_map.py \
 ## 数据与复现边界
 
 真实场景、Marble 导出资产、模型权重、视频、深度序列、渲染缓存和第三方源码都不进入 Git。下载方式、目录契约和 `evaluator_only` 边界见 [`data/README.md`](data/README.md)。仓库中的示例 JSON/PLY 只用于检查接口，不代表导航效果。
+
+餐厅场景的可复现闭环可用 `scripts/run_offline_closed_loop.sh 0007_840137` 运行。该脚本要求已有 Marble 导出的 `world_b.ply`，并且不会读取仿真隐藏真值。
 
 当前第一版是单房间离线原型。在线实时重建、跨房间 Marble 拼接、自动全局重定位和真实机器人执行仍是后续工作；任何使用仿真隐藏真值的脚本都必须明确标记为评测或接线测试。
 
