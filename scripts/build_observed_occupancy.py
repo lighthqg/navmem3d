@@ -31,11 +31,21 @@ def main():
   eye=np.asarray(fr['camera_position'],float); all_xy.append(eye[:2])
   d=np.load(fr['depth_uri']); ys,xs=sampled_pixels(d,a.sample,a.scanline_rows)
   fx,_,cx,_,fy,cy,_,_,_=fr['intrinsics']; r=np.asarray(fr['look_at'])-eye; r/=np.linalg.norm(r); right=np.cross(r,np.asarray(fr['up']));right/=np.linalg.norm(right); up=np.cross(right,r)
-  z=d[ys,xs]; good=(z>0.05)&(z<a.max_depth); xx=(xs[good]-cx)/fx*z[good]; yy=(ys[good]-cy)/fy*z[good]; pts=eye[None,:]+xx[:,None]*right-yy[:,None]*up+z[good,None]*r; all_xy.append(pts[:,:2])
+  z=d[ys,xs]; good=(z>0.05)&(z<a.max_depth)
+  # The same range gate must apply when establishing map bounds.  Otherwise a
+  # few low-opacity far-field splats enlarge the grid before ray fusion and
+  # make a compact room look like a radial, sparse map.
+  z=z[good]; xx=(xs[good]-cx)/fx*z; yy=(ys[good]-cy)/fy*z
+  pts=eye[None,:]+xx[:,None]*right-yy[:,None]*up+z[:,None]*r; all_xy.append(pts[:,:2])
  arr=np.concatenate([x if np.asarray(x).ndim==2 else np.asarray(x)[None,:] for x in all_xy]); lo=arr.min(0)-.4; hi=arr.max(0)+.4; w=int(math.ceil((hi[0]-lo[0])/a.scale))+1; h=int(math.ceil((hi[1]-lo[1])/a.scale))+1; state=np.full((h,w),127,np.uint8)
  def pix(x,y): return int(round((x-lo[0])/a.scale)), int(round((y-lo[1])/a.scale))
- free_hits=np.zeros((h,w),np.uint16) if a.mapping_mode=='elevation' else None
- occupied_hits=np.zeros((h,w),np.uint16) if a.mapping_mode=='elevation' else None
+ # Keep separate evidence counters for both sensor models. A single unstable
+ # depth return must not become a wall in the navigation costmap.
+ # A 30 s patrol can revisit one cell far more than 65,535 times when every
+ # valid RGB-D pixel casts a free-space ray.  uint16 silently wraps and turns
+ # well-observed space into contradictory evidence.
+ free_hits=np.zeros((h,w),np.uint32)
+ occupied_hits=np.zeros((h,w),np.uint32)
  for fr in fs:
   eye=np.asarray(fr['camera_position'],float); ex,ey=pix(*eye[:2]);
   if 0<=ex<w and 0<=ey<h: state[ey,ex]=255
@@ -44,23 +54,26 @@ def main():
   for j in range(len(xs)):
    z=float(d[ys[j],xs[j]]); x=(xs[j]-cx)/fx*z; y=(ys[j]-cy)/fy*z; p=eye+x*right-y*up+z*f; hx,hy=pix(p[0],p[1]);
    if not (0<=hx<w and 0<=hy<h): continue
-   if a.mapping_mode=='ray':
+   # In the RGB-D elevation model, the XY segment before a measured endpoint
+   # is also direct free-space evidence.  The endpoint itself is classified
+   # by height below; this is a small 2.5D occupancy projection rather than
+   # a single horizontal LiDAR slice.
+   if a.mapping_mode in ('ray','elevation'):
     ray=list(bresenham(ex,ey,hx,hy));
     for qx,qy in ray[:-1]:
-     if 0<=qx<w and 0<=qy<h and state[qy,qx]!=0: state[qy,qx]=255
+     if 0<=qx<w and 0<=qy<h: free_hits[qy,qx]+=1
    # In elevation mode, only observed floor endpoints yield free evidence.
    # This prevents high camera rays from carving through table tops.
    if a.mapping_mode=='elevation':
     if p[2] > a.ground_height_m: occupied_hits[hy,hx]+=1
     else: free_hits[hy,hx]+=1
-   elif p[2] > a.ground_height_m: state[hy,hx]=0
-   elif state[hy,hx]!=0: state[hy,hx]=255
- if a.mapping_mode=='elevation':
-  state[:]=127
-  free_confirm=free_hits>0
-  occupied_confirm=(occupied_hits>=a.min_obstacle_hits)&(occupied_hits>=free_hits)
-  state[free_confirm]=255
-  state[occupied_confirm]=0
+   elif p[2] > a.ground_height_m: occupied_hits[hy,hx]+=1
+   else: free_hits[hy,hx]+=1
+ state[:]=127
+ free_confirm=free_hits>0
+ occupied_confirm=(occupied_hits>=a.min_obstacle_hits)&(occupied_hits>=free_hits)
+ state[free_confirm]=255
+ state[occupied_confirm]=0
  # Preserve the uninflated sensor map for geometric evaluation.  The output
  # used by navigation below is a separate costmap, not this raw layer.
  raw_sensor=state.copy()
@@ -83,6 +96,6 @@ def main():
    elif 0<=cx<w and 0<=cy<h:
     inflated[cy,cx]=255
  out=a.output_dir;out.mkdir(parents=True,exist_ok=True);Image.fromarray(raw_sensor).save(out/'observed_occupancy_raw.png');np.save(out/'observed_occupancy_raw.npy',raw_sensor);Image.fromarray(inflated).save(out/'observed_occupancy.png');np.save(out/'observed_occupancy.npy',inflated)
- meta={'schema_version':'0.6','type':'robot_observed_occupancy','source_manifest':str(a.manifest.resolve()),'hidden_occupancy_consumed':False,'hidden_labels_consumed':False,'state_encoding':{'occupied':0,'unknown':127,'free':255},'raw_sensor_layer':'observed_occupancy_raw.png','navigation_costmap_layer':'observed_occupancy.png','scale_m':a.scale,'origin_xy':lo.tolist(),'width':w,'height':h,'robot_radius_m':a.robot_radius,'depth_sample_stride':a.sample,'scanline_rows':a.scanline_rows or None,'mapping_mode':a.mapping_mode,'ground_height_m':a.ground_height_m,'min_obstacle_hits':a.min_obstacle_hits if a.mapping_mode=='elevation' else None,'traversed_footprint_carved':True,'raw_sensor_free_cells':int(np.count_nonzero(raw_sensor==255)),'raw_sensor_occupied_cells':int(np.count_nonzero(raw_sensor==0)),'observed_free_cells':int(np.count_nonzero(inflated==255)),'observed_occupied_cells':int(np.count_nonzero(inflated==0)),'unknown_cells':int(np.count_nonzero(inflated==127))}
+ meta={'schema_version':'0.6','type':'robot_observed_occupancy','source_manifest':str(a.manifest.resolve()),'hidden_occupancy_consumed':False,'hidden_labels_consumed':False,'state_encoding':{'occupied':0,'unknown':127,'free':255},'raw_sensor_layer':'observed_occupancy_raw.png','navigation_costmap_layer':'observed_occupancy.png','scale_m':a.scale,'origin_xy':lo.tolist(),'width':w,'height':h,'robot_radius_m':a.robot_radius,'depth_sample_stride':a.sample,'scanline_rows':a.scanline_rows or None,'mapping_mode':a.mapping_mode,'ground_height_m':a.ground_height_m,'min_obstacle_hits':a.min_obstacle_hits,'traversed_footprint_carved':True,'raw_sensor_free_cells':int(np.count_nonzero(raw_sensor==255)),'raw_sensor_occupied_cells':int(np.count_nonzero(raw_sensor==0)),'observed_free_cells':int(np.count_nonzero(inflated==255)),'observed_occupied_cells':int(np.count_nonzero(inflated==0)),'unknown_cells':int(np.count_nonzero(inflated==127))}
  (out/'occupancy_metadata.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2)+'\n');print(json.dumps(meta,ensure_ascii=False))
 if __name__=='__main__':main()

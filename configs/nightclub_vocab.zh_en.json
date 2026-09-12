@@ -1,0 +1,13 @@
+{
+  "schema_version": "0.1",
+  "categories": [
+    {"id":"bar_stool","canonical":"bar stool","aliases":["bar stool","stool","高脚凳"]},
+    {"id":"sofa","canonical":"sofa","aliases":["sofa","couch","沙发"]},
+    {"id":"low_table","canonical":"coffee table","aliases":["coffee table","low table","茶几"]},
+    {"id":"bar_counter","canonical":"bar counter","aliases":["bar counter","bar","吧台"]},
+    {"id":"shelf","canonical":"shelf","aliases":["shelf","shelving","货架"]},
+    {"id":"pendant_light","canonical":"pendant light","aliases":["pendant light","hanging lamp","吊灯"]},
+    {"id":"room_divider","canonical":"room divider","aliases":["room divider","partition","隔断"]},
+    {"id":"wall_art","canonical":"wall art","aliases":["wall art","painting","wall decoration","壁画"]}
+  ]
+}
