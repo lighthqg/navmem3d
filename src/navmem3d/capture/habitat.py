@@ -13,6 +13,7 @@ class HabitatCaptureConfig:
     scene: Path
     output_dir: Path
     sequence_id: str
+    scene_dataset_config: Path | None = None
     frame_count: int = 120
     width: int = 640
     height: int = 480
@@ -70,6 +71,10 @@ def capture_sequence(config: HabitatCaptureConfig) -> CaptureSequence:
 
     simulator_config = habitat_sim.SimulatorConfiguration()
     simulator_config.scene_id = str(config.scene.resolve())
+    if config.scene_dataset_config is not None:
+        if not config.scene_dataset_config.exists():
+            raise FileNotFoundError(config.scene_dataset_config)
+        simulator_config.scene_dataset_config_file = str(config.scene_dataset_config.resolve())
     simulator_config.random_seed = config.seed
 
     rgb = habitat_sim.CameraSensorSpec()
@@ -145,18 +150,22 @@ def _sample_patrol_points(sim: Any, frame_count: int) -> list[Any]:
 
     polyline: list[Any] = []
     attempts = 0
+    # Every appended segment starts at the previous segment's endpoint.  Do
+    # not concatenate independent shortest paths: their geometric gap would
+    # create a fictitious, potentially wall-crossing robot motion.
+    current = sim.pathfinder.get_random_navigable_point()
     while len(polyline) < 8 and attempts < 30:
         attempts += 1
-        start = sim.pathfinder.get_random_navigable_point()
         end = sim.pathfinder.get_random_navigable_point()
         path = habitat_sim.ShortestPath()
-        path.requested_start = start
+        path.requested_start = current
         path.requested_end = end
         if sim.pathfinder.find_path(path) and len(path.points) >= 2:
             if polyline:
                 polyline.extend(path.points[1:])
             else:
                 polyline.extend(path.points)
+            current = path.points[-1]
     if len(polyline) < 2:
         raise RuntimeError("could not sample a navigable patrol in the scene")
 

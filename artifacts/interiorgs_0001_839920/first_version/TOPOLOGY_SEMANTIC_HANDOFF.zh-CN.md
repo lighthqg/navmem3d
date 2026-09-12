@@ -106,3 +106,5 @@ observed_map/route_dining_table.json
 ```
 
 当前 RGB-D 清单已经生成，但 CPU Gaussian center z-buffer 只是临时深度近似，不能直接作为正式占据建图结果。第一次拓扑尝试暴露了两个错误：稀疏高斯中心造成大量 unknown/occupied 空洞；在自由空间上按邻近节点连边会产生虚假捷径。正式验收必须先通过深度覆盖率、自由空间覆盖率、孤立节点数和连通分量检查，再生成拓扑。A 的隐藏 occupancy、labels、structure 仍只用于评测，不能用于修补这些输入。
+
+后续在 `InteriorGS 0007` 休息室的实测进一步确认：即使改用多帧端点共识和低扫描线 2.5D 投影，3DGS renderer 的 z-buffer 仍会在反射或稀疏区域产生远处假回波，导致约 43% 的已观测可通行判定实际为障碍（evaluator-only 统计）。因此，**InteriorGS 的 splat depth 不能作为 M 层正式传感器输入**。它适合 B 的视觉三维重建验证；M 的正式评测 A 必须提供物理可信的 RGB-D/LiDAR 或可 raycast 的碰撞几何。Marble 导出的 `collider.glb` 可以形成 B 的离线路径先验，但不得伪装为 M 的机器人观测。

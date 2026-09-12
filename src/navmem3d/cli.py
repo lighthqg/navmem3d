@@ -64,6 +64,7 @@ def build_parser() -> argparse.ArgumentParser:
         "capture-habitat", help="render an RGB-D patrol with an optional Habitat-Sim install"
     )
     habitat_parser.add_argument("--scene", type=Path, required=True)
+    habitat_parser.add_argument("--scene-dataset-config", type=Path, help="optional Habitat scene-dataset config")
     habitat_parser.add_argument("--output", type=Path, required=True)
     habitat_parser.add_argument("--sequence-id", required=True)
     habitat_parser.add_argument("--frames", type=int, default=120)
@@ -392,6 +393,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 HabitatCaptureConfig(
                     scene=args.scene,
                     output_dir=args.output,
+                    scene_dataset_config=args.scene_dataset_config,
                     sequence_id=args.sequence_id,
                     frame_count=args.frames,
                     width=args.width,

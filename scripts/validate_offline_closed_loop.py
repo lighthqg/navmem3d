@@ -28,7 +28,10 @@ checks['semantic_metric_registration_disabled']=ent.get('metric_b_to_a_registrat
 checks['all_entity_bindings_valid']=all(x.get('topology_node_id') in nodes and len(x.get('candidate_topology_nodes',[]))>0 for x in ent.get('entities',[]))
 checks['route_nodes_valid']=all(x in nodes for x in route.get('node_sequence',[]))
 checks['route_target_valid']=route.get('target_topology_node_id') in nodes
-checks['route_requires_current_rgb_confirmation']='confirm' in str(route.get('handoff',{})).lower() or 'confirm' in str(route.get('target_entity',{})).lower()
+checks['route_requires_current_rgb_confirmation']='confirm' in str(route.get('arrival_policy','')).lower() and ('current rgb' in str(route.get('arrival_policy','')).lower() or 'current-rgb' in str(route.get('arrival_policy','')).lower())
+if not checks['route_requires_current_rgb_confirmation']:errors.append('route_missing_current_rgb_confirmation_policy')
+checks['route_candidate_routes_nonempty']=len(route.get('target_candidate_routes',[]))>0
+if not checks['route_candidate_routes_nonempty']:errors.append('route_missing_visual_candidate_routes')
 # Recheck every patrol pose lands in free M cells, independent of builder metadata.
 if occ_path.exists() and m and a.patrol.exists():
  frames=load(a.patrol).get('frames',[]);origin=np.asarray(m['origin_xy']);scale=float(m['scale_m']);poses=np.asarray([x['camera_position'][:2] for x in frames]);pix=np.floor((poses-origin)/scale).astype(int);inside=(pix[:,0]>=0)&(pix[:,0]<grid.shape[1])&(pix[:,1]>=0)&(pix[:,1]<grid.shape[0]);checks['patrol_pose_free_rate']=float((grid[pix[inside,1],pix[inside,0]]==255).mean()) if inside.any() else 0.0
