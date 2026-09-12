@@ -128,6 +128,7 @@ def main() -> None:
             'planning_world': 'robot-observed undirected topology graph M',
             'execution_world': 'robot/current RGB + controller',
             'metric_b_to_a_transform_used': False,
+            'route_execution_constraint': 'traverse only topology edges whose evidence is observed patrol; occupancy free cells are not shortcut edges',
         },
         'arrival_policy': 'primary route is a visual hypothesis; test alternatives only after current-RGB confirmation or relocalisation failure',
     }

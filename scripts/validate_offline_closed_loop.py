@@ -21,6 +21,8 @@ for key in ['hidden_occupancy_consumed','simulator_navmesh_consumed','simulator_
 nodes={x.get('node_id') for x in top.get('nodes',[])};edges=top.get('edges',[])
 checks['topology_nonempty']=bool(nodes and edges)
 checks['topology_edges_reference_known_nodes']=all(x.get('from_node') in nodes and x.get('to_node') in nodes for x in edges)
+checks['topology_edges_are_patrol_evidence']=all(x.get('evidence') in {'consecutive_patrol_segment','closed_patrol_return'} and x.get('undirected') is True for x in edges)
+if not checks['topology_edges_are_patrol_evidence']:errors.append('topology_contains_non_patrol_edge')
 checks['topology_patrol_validation']=bool(top.get('patrol_free_validation',{}).get('passed'))
 if not checks['topology_patrol_validation']:errors.append('patrol_validation_failed')
 checks['semantic_entities_nonempty']=len(ent.get('entities',[]))>0

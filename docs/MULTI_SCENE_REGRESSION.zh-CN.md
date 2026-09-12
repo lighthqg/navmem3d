@@ -28,3 +28,7 @@ scripts/run_offline_closed_loop.sh 0007_840137
 ```
 
 每次运行会生成 `m_closed_loop/dashboard/index.html`。这个本地页面是审阅接口，不输入规划器。
+
+## 安全解释
+
+两次自检表示数据边界和拓扑契约正确，并不表示 Gaussian 占据图已可独立避障。隐藏真值的事后评测发现 false-free 仍偏高，因此路线执行只沿已巡视边；完整统计和执行约束见 [`M_OCCUPANCY_SAFETY_BOUNDARY.zh-CN.md`](M_OCCUPANCY_SAFETY_BOUNDARY.zh-CN.md)。
