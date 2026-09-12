@@ -8,6 +8,7 @@ p = argparse.ArgumentParser()
 p.add_argument('--m-dir', type=Path, required=True)
 p.add_argument('--b-dir', type=Path, required=True)
 p.add_argument('--output', type=Path, required=True)
+p.add_argument('--route', type=Path)
 a = p.parse_args()
 
 def read(path): return json.loads(path.read_text())
@@ -15,13 +16,13 @@ def relative(path): return os.path.relpath(path, a.output).replace(os.sep, '/')
 
 metadata = read(a.m_dir / 'occupancy_metadata.json')
 topology = read(a.m_dir / 'patrol_topology.json')
-route = read(a.m_dir / 'route_to_sofa.json')
+route = read(a.route or a.m_dir / 'route_to_sofa.json')
 report = read(a.m_dir / 'closed_loop_self_check.json')
 entities = read(a.b_dir / 'entities_to_m.json')['entities']
 target_id = route['target_entity']['entity_id']
 for entity in entities:
     entity['crop_uri'] = relative(a.b_dir / 'crops' / 'crops' / f"{entity['entity_id']}.png")
-route['map_uri'] = relative(a.m_dir / 'route_to_sofa.png')
+route['map_uri'] = relative((a.route or a.m_dir / 'route_to_sofa.json').with_suffix('.png'))
 data = {'metadata': metadata, 'topology': topology, 'route': route, 'report': report, 'entities': entities}
 a.output.mkdir(parents=True, exist_ok=True)
 (a.output / 'dashboard.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')

@@ -5,12 +5,12 @@ import argparse,json
 from pathlib import Path
 import numpy as np
 from PIL import Image
-p=argparse.ArgumentParser();p.add_argument('--m-dir',type=Path,required=True);p.add_argument('--b-dir',type=Path,required=True);p.add_argument('--patrol',type=Path,required=True);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--m-dir',type=Path,required=True);p.add_argument('--b-dir',type=Path,required=True);p.add_argument('--patrol',type=Path,required=True);p.add_argument('--route',type=Path);a=p.parse_args()
 errors=[];checks={}
 def load(path):
  if not path.exists():errors.append(f'missing:{path}');return {}
  return json.loads(path.read_text())
-m=load(a.m_dir/'occupancy_metadata.json');top=load(a.m_dir/'patrol_topology.json');route=load(a.m_dir/'route_to_sofa.json');ent=load(a.b_dir/'entities_to_m.json')
+m=load(a.m_dir/'occupancy_metadata.json');top=load(a.m_dir/'patrol_topology.json');route=load(a.route or a.m_dir/'route_to_sofa.json');ent=load(a.b_dir/'entities_to_m.json')
 occ_path=a.m_dir/'observed_occupancy.png'
 if occ_path.exists():
  grid=np.asarray(Image.open(occ_path).convert('L'));checks['occupancy_states_valid']=bool(np.isin(grid,[0,127,255]).all());checks['occupancy_counts']={str(v):int((grid==v).sum()) for v in [0,127,255]}

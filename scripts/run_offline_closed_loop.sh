@@ -13,7 +13,8 @@ patrol="${run_dir}/patrol/patrol.json"
 b_asset="${run_dir}/world_b/marble_1_1/world_b.ply"
 m_dir="${run_dir}/m_closed_loop"
 b_dir="${run_dir}/world_b/semantic_closed_loop"
-vocab="configs/nightclub_vocab.zh_en.json"
+vocab="${NAVMEM3D_VOCAB:-configs/nightclub_vocab.zh_en.json}"
+query_term="${NAVMEM3D_QUERY_TERM:-sofa}"
 checkpoint="models/sam2/sam2.1_hiera_tiny.pt"
 # run_gpu.sh uses a task-local XDG cache for CUDA builds.  Keep Hugging Face
 # explicitly on the persistent model cache so the semantic stage is genuinely
@@ -71,12 +72,14 @@ scripts/run_gpu.sh scripts/bind_entities_via_crop_retrieval.py \
 # Query→route demonstration.  The executor must still confirm the target in current RGB.
 PYTHONPATH=src .envs/semantic/bin/python scripts/plan_topology_route.py \
   --topology "${m_dir}/patrol_topology.json" --entities "${b_dir}/entities_to_m.json" \
-  --term sofa --start-node topo_000 --output "${m_dir}/route_to_sofa.json"
+  --term "${query_term}" --start-node topo_000 --output "${m_dir}/route_to_${query_term}.json"
 PYTHONPATH=src .envs/semantic/bin/python scripts/render_topology_route.py \
   --occupancy "${m_dir}/observed_occupancy.png" --metadata "${m_dir}/occupancy_metadata.json" \
-  --topology "${m_dir}/patrol_topology.json" --route "${m_dir}/route_to_sofa.json" \
-  --output "${m_dir}/route_to_sofa.png"
+  --topology "${m_dir}/patrol_topology.json" --route "${m_dir}/route_to_${query_term}.json" \
+  --output "${m_dir}/route_to_${query_term}.png"
 PYTHONPATH=src .envs/semantic/bin/python scripts/validate_offline_closed_loop.py \
-  --m-dir "${m_dir}" --b-dir "${b_dir}" --patrol "${patrol}"
+  --m-dir "${m_dir}" --b-dir "${b_dir}" --patrol "${patrol}" --route "${m_dir}/route_to_${query_term}.json"
+PYTHONPATH=src .envs/semantic/bin/python scripts/build_closed_loop_dashboard.py \
+  --m-dir "${m_dir}" --b-dir "${b_dir}" --route "${m_dir}/route_to_${query_term}.json" --output "${m_dir}/dashboard"
 
 echo "closed loop complete: ${m_dir} + ${b_dir}"
