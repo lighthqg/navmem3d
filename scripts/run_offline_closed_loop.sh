@@ -15,6 +15,10 @@ m_dir="${run_dir}/m_closed_loop"
 b_dir="${run_dir}/world_b/semantic_closed_loop"
 vocab="configs/nightclub_vocab.zh_en.json"
 checkpoint="models/sam2/sam2.1_hiera_tiny.pt"
+# run_gpu.sh uses a task-local XDG cache for CUDA builds.  Keep Hugging Face
+# explicitly on the persistent model cache so the semantic stage is genuinely
+# reproducible offline after the one-time model download.
+export HF_HOME="${HF_HOME:-${HOME}/.cache/huggingface}"
 
 for file in "${a_asset}" "${patrol}" "${b_asset}" "${vocab}" "${checkpoint}"; do
   [[ -f "${file}" ]] || { echo "missing required input: ${file}" >&2; exit 2; }
@@ -50,17 +54,17 @@ for i in 000 001 002 003 004 005 006 007; do
 done
 PYTHONPATH=src .envs/semantic/bin/python -m navmem3d.cli fuse-proposals "${proposal_args[@]}" --output "${b_dir}/fused"
 PYTHONPATH=src .envs/semantic/bin/python -m navmem3d.cli derive-geometry \
-  --entities "${b_dir}/fused/fused_entities.json" --asset "${b_asset}" --output "${b_dir}/geometry.json" --near-threshold-ratio .03
+  --entities "${b_dir}/fused/fused_entities.json" --asset "${b_asset}" --output "${b_dir}/fused/geometry.json" --near-threshold-ratio .03
 PYTHONPATH=src .envs/semantic/bin/python -m navmem3d.cli filter-entities \
-  --geometry-index "${b_dir}/geometry.json" --output "${b_dir}/searchable.json"
+  --geometry-index "${b_dir}/fused/geometry.json" --output "${b_dir}/fused/searchable.json"
 PYTHONPATH=src .envs/semantic/bin/python -m navmem3d.cli deduplicate-entities \
-  --entity-index "${b_dir}/searchable.json" --output "${b_dir}/entities.json"
+  --entity-index "${b_dir}/fused/searchable.json" --output "${b_dir}/fused/entities.json"
 PYTHONPATH=src .envs/semantic/bin/python -m navmem3d.cli export-entity-crops \
-  --entity-index "${b_dir}/entities.json" --output "${b_dir}/crops"
+  --entity-index "${b_dir}/fused/entities.json" --output "${b_dir}/crops"
 
 # B→M: visual candidate binding, deliberately without a global B→A metric transform.
 scripts/run_gpu.sh scripts/bind_entities_via_crop_retrieval.py \
-  --entities "${b_dir}/entities.json" --crops "${b_dir}/crops/representative_crops.json" \
+  --entities "${b_dir}/fused/entities.json" --crops "${b_dir}/crops/representative_crops.json" \
   --patrol "${patrol}" --patrol-renders "${run_dir}/patrol/renders" \
   --topology "${m_dir}/patrol_topology.json" --output "${b_dir}/entities_to_m.json" --stride 2 --top-k 3
 
@@ -68,5 +72,7 @@ scripts/run_gpu.sh scripts/bind_entities_via_crop_retrieval.py \
 PYTHONPATH=src .envs/semantic/bin/python scripts/plan_topology_route.py \
   --topology "${m_dir}/patrol_topology.json" --entities "${b_dir}/entities_to_m.json" \
   --term sofa --start-node topo_000 --output "${m_dir}/route_to_sofa.json"
+PYTHONPATH=src .envs/semantic/bin/python scripts/validate_offline_closed_loop.py \
+  --m-dir "${m_dir}" --b-dir "${b_dir}" --patrol "${patrol}"
 
 echo "closed loop complete: ${m_dir} + ${b_dir}"
