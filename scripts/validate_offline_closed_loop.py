@@ -32,6 +32,23 @@ checks['semantic_metric_registration_disabled']=ent.get('metric_b_to_a_registrat
 checks['all_entity_bindings_valid']=all(x.get('topology_node_id') in nodes and len(x.get('candidate_topology_nodes',[]))>0 for x in ent.get('entities',[]))
 checks['route_nodes_valid']=all(x in nodes for x in route.get('node_sequence',[]))
 checks['route_target_valid']=route.get('target_topology_node_id') in nodes
+checks['route_is_grid_planned']=bool(route.get('grid_path_xy'))
+if checks['route_is_grid_planned']:
+ origin=np.asarray(m['origin_xy']); scale=float(m['scale_m'])
+ def cells_between(p0,p1):
+  x0,y0=p0; x1,y1=p1; dx,sx=abs(x1-x0),1 if x0<x1 else -1; dy,sy=-abs(y1-y0),1 if y0<y1 else -1; err=dx+dy
+  while True:
+   yield x0,y0
+   if (x0,y0)==(x1,y1): break
+   twice=2*err
+   if twice>=dy: err+=dy; x0+=sx
+   if twice<=dx: err+=dx; y0+=sy
+ points=[tuple(np.rint((np.asarray(xy)-origin)/scale).astype(int)) for xy in route['grid_path_xy']]
+ route_cells=[cell for p0,p1 in zip(points,points[1:]) for cell in cells_between(p0,p1)]
+ checks['grid_route_free']=bool(route_cells) and all(0<=x<grid.shape[1] and 0<=y<grid.shape[0] and grid[y,x]==255 for x,y in route_cells)
+ if not checks['grid_route_free']:errors.append('grid_route_contains_nonfree_cell')
+else:
+ checks['grid_route_free']=None
 checks['route_requires_current_rgb_confirmation']='confirm' in str(route.get('arrival_policy','')).lower() and ('current rgb' in str(route.get('arrival_policy','')).lower() or 'current-rgb' in str(route.get('arrival_policy','')).lower())
 if not checks['route_requires_current_rgb_confirmation']:errors.append('route_missing_current_rgb_confirmation_policy')
 checks['route_candidate_routes_nonempty']=len(route.get('target_candidate_routes',[]))>0

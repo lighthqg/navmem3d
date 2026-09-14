@@ -69,8 +69,11 @@ scripts/run_gpu.sh scripts/bind_entities_via_crop_retrieval.py \
   --patrol "${patrol}" --patrol-renders "${run_dir}/patrol/renders" \
   --topology "${m_dir}/patrol_topology.json" --output "${b_dir}/entities_to_m.json" --stride 2 --top-k 3
 
-# Query→route demonstration.  The executor must still confirm the target in current RGB.
-PYTHONPATH=src .envs/semantic/bin/python scripts/plan_topology_route.py \
+# Query→route demonstration.  A* uses only M free cells; occupied and unknown
+# remain blocked.  Topology nodes remain visual/keyframe anchors.  The executor
+# must still confirm the selected instance in current RGB.
+PYTHONPATH=src .envs/semantic/bin/python scripts/plan_observed_occupancy_route.py \
+  --occupancy "${m_dir}/observed_occupancy.png" --metadata "${m_dir}/occupancy_metadata.json" \
   --topology "${m_dir}/patrol_topology.json" --entities "${b_dir}/entities_to_m.json" \
   --term "${query_term}" --start-node topo_000 --output "${m_dir}/route_to_${query_term}.json"
 PYTHONPATH=src .envs/semantic/bin/python scripts/render_topology_route.py \

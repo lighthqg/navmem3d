@@ -4,8 +4,8 @@
 
 | 场景 | 词表 / 查询 | M：free / occupied / unknown | 拓扑 | B 端去重实体 | 示例主路线 | 自检 |
 |---|---|---:|---:|---:|---:|---|
-| `0001_839920` 餐厅 | restaurant vocab / `dining_table` | 4,604 / 3,513 / 3,188 | 26 节点、26 实际巡视边 | 71 | 5.43 m，4 节点 | 通过 |
-| `0007_840137` 休息室 | nightclub vocab / `sofa` | 12,985 / 8,771 / 14,124 | 39 节点、39 实际巡视边 | 46 | 19.62 m，9 节点 | 通过 |
+| `0001_839920` 餐厅 | restaurant vocab / `dining_table` | 4,604 / 3,513 / 3,188 | 26 节点、26 实际巡视边 | 71 | 4.92 m，A* 44 栅格 | 通过 |
+| `0007_840137` 休息室 | nightclub vocab / `sofa` | 12,985 / 8,771 / 14,124 | 39 节点、39 实际巡视边 | 46 | 11.58 m，A* 99 栅格 | 通过 |
 
 两次运行的共同约束：
 
@@ -31,4 +31,4 @@ scripts/run_offline_closed_loop.sh 0007_840137
 
 ## 安全解释
 
-两次自检表示数据边界和拓扑契约正确，并不表示 Gaussian 占据图已可独立避障。隐藏真值的事后评测发现 false-free 仍偏高，因此路线执行只沿已巡视边；完整统计和执行约束见 [`M_OCCUPANCY_SAFETY_BOUNDARY.zh-CN.md`](M_OCCUPANCY_SAFETY_BOUNDARY.zh-CN.md)。
+两次自检表示数据边界和拓扑契约正确，并不表示 Gaussian 占据图已可独立避障。隐藏真值的事后评测发现 false-free 仍偏高，因此路线只穿越 M 中连续的 free 栅格，且不穿越 unknown/occupied；完整统计和执行约束见 [`M_OCCUPANCY_SAFETY_BOUNDARY.zh-CN.md`](M_OCCUPANCY_SAFETY_BOUNDARY.zh-CN.md)。
