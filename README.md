@@ -70,7 +70,7 @@ PYTHONPATH=src python3 scripts/render_layered_map.py \
 
 真实场景、Marble 导出资产、模型权重、视频、深度序列、渲染缓存和第三方源码都不进入 Git。下载方式、目录契约和 `evaluator_only` 边界见 [`data/README.md`](data/README.md)。仓库中的示例 JSON/PLY 只用于检查接口，不代表导航效果。
 
-餐厅场景的可复现闭环可用 `scripts/run_offline_closed_loop.sh 0007_840137` 运行。该脚本要求已有 Marble 导出的 `world_b.ply`，并且不会读取仿真隐藏真值。执行后会生成三态 M 地图、实际巡视拓扑、实体的多候选视觉绑定、主路线与本地审阅页；完整边界和结果见 [`docs/CLOSED_LOOP_EVALUATION_0007.zh-CN.md`](docs/CLOSED_LOOP_EVALUATION_0007.zh-CN.md)。 两个现有 Marble 场景的回归记录见 [`docs/MULTI_SCENE_REGRESSION.zh-CN.md`](docs/MULTI_SCENE_REGRESSION.zh-CN.md)。 M 图的安全边界与执行约束见 [`docs/M_OCCUPANCY_SAFETY_BOUNDARY.zh-CN.md`](docs/M_OCCUPANCY_SAFETY_BOUNDARY.zh-CN.md)。 已实现能力与明确排除项见 [`docs/EXPERIMENT_STATUS.zh-CN.md`](docs/EXPERIMENT_STATUS.zh-CN.md)。
+餐厅场景的可复现闭环可用 `scripts/run_offline_closed_loop.sh 0007_840137` 运行。该脚本要求已有 Marble 导出的 `world_b.ply`，并且不会读取仿真隐藏真值。执行后会生成三态 M 地图、实际巡视拓扑、实体的多候选视觉绑定、主路线与本地审阅页；完整边界和结果见 [`docs/CLOSED_LOOP_EVALUATION_0007.zh-CN.md`](docs/CLOSED_LOOP_EVALUATION_0007.zh-CN.md)。 两个现有 Marble 场景的回归记录见 [`docs/MULTI_SCENE_REGRESSION.zh-CN.md`](docs/MULTI_SCENE_REGRESSION.zh-CN.md)。 M 图的安全边界与执行约束见 [`docs/M_OCCUPANCY_SAFETY_BOUNDARY.zh-CN.md`](docs/M_OCCUPANCY_SAFETY_BOUNDARY.zh-CN.md)。 已实现能力与明确排除项见 [`docs/EXPERIMENT_STATUS.zh-CN.md`](docs/EXPERIMENT_STATUS.zh-CN.md)。 全量起点与实体候选路线评测见 [`docs/ROUTE_MATRIX_EVALUATION.zh-CN.md`](docs/ROUTE_MATRIX_EVALUATION.zh-CN.md)。
 
 当前第一版是单房间离线原型。在线实时重建、跨房间 Marble 拼接、自动全局重定位和真实机器人执行仍是后续工作；任何使用仿真隐藏真值的脚本都必须明确标记为评测或接线测试。
 

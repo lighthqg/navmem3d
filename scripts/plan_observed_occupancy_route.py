@@ -22,15 +22,32 @@ def raster_line(a, b):
         if twice<=dx: err+=dx; y0+=sy
 
 
+def line_clear(a, b, blocked):
+    """Conservative supercover test for an any-angle shortcut.
+
+    Checking only Bresenham pixels can let a segment graze an obstacle corner.
+    Sample at quarter-cell resolution and require every touched surrounding cell
+    to be free, using the same inflated blocked set as A*.
+    """
+    ax, ay = a; bx, by = b
+    steps = max(1, int(math.ceil(math.hypot(bx - ax, by - ay) * 4)))
+    for t in np.linspace(0.0, 1.0, steps + 1):
+        x, y = ax + (bx - ax) * t, ay + (by - ay) * t
+        for col in {math.floor(x), math.ceil(x)}:
+            for row in {math.floor(y), math.ceil(y)}:
+                if (col, row) in blocked:
+                    return False
+    return True
+
+
 def simplify(path, blocked):
-    """Line-of-sight simplify without crossing blocked grid cells."""
+    """Line-of-sight simplify without grazing occupied or unknown cells."""
     if len(path) < 3: return path
     result=[path[0]]; i=0
     while i < len(path)-1:
         chosen=i+1
         for j in range(i+2,len(path)):
-            line=list(raster_line(path[i],path[j]))
-            if any(cell in blocked for cell in line): break
+            if not line_clear(path[i], path[j], blocked): break
             chosen=j
         result.append(path[chosen]); i=chosen
     return result
