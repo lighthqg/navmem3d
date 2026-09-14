@@ -41,12 +41,30 @@ for left,right in zip(keep,keep[1:]):
  samples += [round(left+(right-left)*k/n) for k in range(n)]
 samples.append(keep[-1]);samples=sorted(set(samples))
 nodes=[{'node_id':f'topo_{i:03d}','type':'patrol_turn_or_sample','position_xy':xy[k].tolist(),'reference_frame_id':frames[k]['frame_id'],'reference_frame_index':int(k),'reference_rgb_uri':frames[k].get('rgb_uri')} for i,k in enumerate(samples)]
+# An edge is the *recorded patrol polyline* between key nodes, not a chord
+# between their positions.  RDP/sampling only reduces route decisions; it must
+# never change the physical path the robot actually traversed.
+node_frame_indices=[n['reference_frame_index'] for n in nodes]
+def make_edge(edge_id,left,right,evidence,polyline):
+ polyline=np.asarray(polyline,float)
+ length=float(np.linalg.norm(np.diff(polyline,axis=0),axis=1).sum()) if len(polyline)>1 else 0.0
+ return {'edge_id':edge_id,'from_node':nodes[left]['node_id'],'to_node':nodes[right]['node_id'],
+         'undirected':True,'cost':length,'length_m':length,'evidence':evidence,
+         'polyline_xy':polyline.tolist(),'source_frame_index_range':[int(node_frame_indices[left]),int(node_frame_indices[right])]}
 edges=[]
 for i in range(len(nodes)-1):
- d=float(np.linalg.norm(np.asarray(nodes[i+1]['position_xy'])-np.asarray(nodes[i]['position_xy'])));edges.append({'edge_id':f'edge_{i:03d}','from_node':nodes[i]['node_id'],'to_node':nodes[i+1]['node_id'],'undirected':True,'cost':d,'length_m':d,'evidence':'consecutive_patrol_segment'})
+ start,end=node_frame_indices[i],node_frame_indices[i+1]
+ edges.append(make_edge(f'edge_{i:03d}',i,i+1,'consecutive_patrol_segment',xy[start:end+1]))
 if np.linalg.norm(xy[0]-xy[-1]) < 1e-4 and len(nodes) > 2:
- d=float(np.linalg.norm(np.asarray(nodes[0]['position_xy'])-np.asarray(nodes[-1]['position_xy'])))
- edges.append({'edge_id':f'edge_{len(edges):03d}','from_node':nodes[-1]['node_id'],'to_node':nodes[0]['node_id'],'undirected':True,'cost':d,'length_m':d,'evidence':'closed_patrol_return'})
+ start,end=node_frame_indices[-1],node_frame_indices[0]
+ # A closed patrol normally ends at its first pose.  Retain every final
+ # recorded sample, then append the initial segment if node 0 is not frame 0.
+ closure=np.concatenate([xy[start:],xy[1:end+1]],axis=0) if end else xy[start:]
+ if len(closure) == 1:
+  # The logged final pose can equal the first pose exactly. Preserve an explicit
+  # zero-length return geometry instead of leaving a malformed edge.
+  closure=np.vstack([closure, xy[end]])
+ edges.append(make_edge(f'edge_{len(edges):03d}',len(nodes)-1,0,'closed_patrol_return',closure))
 # Validate rather than infer: every recorded segment must lie in generated free space.
 state=np.asarray(Image.open(a.occupancy).convert('L'));m=json.loads(a.metadata.read_text());o=np.asarray(m['origin_xy']);s=float(m['scale_m']);pix=np.floor((xy-o)/s).astype(int);bad=0;total=0
 for u,v in zip(pix,pix[1:]):
@@ -54,5 +72,5 @@ for u,v in zip(pix,pix[1:]):
   total+=1
   if not(0<=x<state.shape[1] and 0<=y<state.shape[0]) or state[y,x]!=255:bad+=1
 keyframes=[{'topology_node_id':n['node_id'],'source_frame_id':n['reference_frame_id'],'source_frame_index':n['reference_frame_index'],'reference_rgb_uri':n['reference_rgb_uri']} for n in nodes]
-out={'schema_version':'1.0','type':'undirected_patrol_topology','source_patrol':str(a.patrol.resolve()),'source_occupancy':str(a.occupancy.resolve()),'hidden_occupancy_consumed':False,'edges_are_observed_patrol_only':True,'closed_patrol':bool(np.linalg.norm(xy[0]-xy[-1]) < 1e-4),'nodes':nodes,'edges':edges,'topology_keyframes':keyframes,'patrol_free_validation':{'checked_cells':total,'non_free_cells':bad,'passed':bad==0}}
+out={'schema_version':'1.1','type':'undirected_patrol_topology','source_patrol':str(a.patrol.resolve()),'source_occupancy':str(a.occupancy.resolve()),'hidden_occupancy_consumed':False,'edges_are_observed_patrol_only':True,'closed_patrol':bool(np.linalg.norm(xy[0]-xy[-1]) < 1e-4),'nodes':nodes,'edges':edges,'topology_keyframes':keyframes,'patrol_free_validation':{'checked_cells':total,'non_free_cells':bad,'passed':bad==0}}
 a.output.parent.mkdir(parents=True,exist_ok=True);a.output.write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n');print(json.dumps({'nodes':len(nodes),'edges':len(edges),'validation':out['patrol_free_validation']},ensure_ascii=False))

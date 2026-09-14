@@ -13,7 +13,7 @@
 
 因此第一版的执行契约是：
 
-1. 路线搜索只允许使用 `evidence=consecutive_patrol_segment` 或 `closed_patrol_return` 的无向拓扑边。
+1. 路线搜索只允许使用 `evidence=consecutive_patrol_segment` 或 `closed_patrol_return` 的无向拓扑边；每条边必须保存实际巡视的 `polyline_xy`，代价按该折线累计，渲染和执行也沿同一折线。
 2. 不得因为两个节点在二维上相近、或其间 M 栅格目前为 free，就补一条捷径。
 3. `free` 是巡视过和局部几何支持的证据；`unknown` 一律不可用于规划；`occupied` 用于边界提示和安全门。
 4. 到达 B→M 的目标候选节点后，仍以当前 RGB 确认目标实例；失败时在视觉候选中重定位，而不是依赖 B 的米制坐标。
